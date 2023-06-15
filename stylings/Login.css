@@ -11,10 +11,10 @@ body {
   align-items: center;
 }
 img {
-  max-width: 700px;
-  max-height: 700px;
+  height: auto;
+  object-fit: contain;
 }
-/*
+
 body::before {
   content: "XS";
   color: red;
@@ -61,5 +61,3 @@ body::before {
     content: "XXL";
   }
 }
-
-*/

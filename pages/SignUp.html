@@ -15,6 +15,7 @@
       defer
       src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
     ></script>
+    <link rel="stylesheet" href="/stylings/Login.css" />
   </head>
   <body>
     <div class="container">
@@ -23,12 +24,12 @@
           <img class="img-fluid" src="/assets/signup.svg" />
         </div>
         <div class="col mx-auto">
+          <div class="row mt-sm-5">
+            <h1 class="">Account Details</h1>
+            <small class="mb-2">Personal Information</small>
+          </div>
           <form action="">
-            <div class="row">
-              <h1 class="">Account Details</h1>
-              <small class="mb-2">Personal Information</small>
-            </div>
-            <div class="row name_row">
+            <div class="row row-cols-1 row-cols-md-2 name_row">
               <div class="col mb-2">
                 <div class="form-floating">
                   <input type="text" class="form-control" id="fname" />
