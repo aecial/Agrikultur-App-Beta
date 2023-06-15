@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylings/Login.css" />
+    <!-- Boostrap CSS -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Boostrap Javascript -->
+    <script
+      defer
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container login_cont">
+      <div class="row">
+        <div class="col d-none d-lg-block">
+          <img class="img-fluid" src="/assets/login.svg" alt="Login Pic" lazy />
+        </div>
+        <div class="col mx-auto">
+          <h1 class="form-label text-center">Login</h1>
+          <form novalidate class="">
+            <div class="form-floating">
+              <input
+                type="email"
+                class="form-control mb-3"
+                id="email-inp"
+                placeholder="Enter Email here"
+              />
+              <label for="email-inp">Email</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control mb-3"
+                id="pass-inp"
+                placeholder="Enter Password here"
+              />
+              <label for="pass-inp">Password</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mb-3">
+              Submit
+            </button>
+          </form>
+          <small
+            >Don't have an account? <a href="SignUp.html">Sign Up</a></small
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
