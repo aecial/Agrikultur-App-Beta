@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="/stylings/Login.css" />
+    <link rel="stylesheet" href="/stylings/SignUp.css" />
     <!-- Boostrap CSS -->
     <link
       rel="stylesheet"
@@ -15,30 +15,41 @@
       defer
       src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
     ></script>
-    <link rel="stylesheet" href="/stylings/Login.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container my-auto bg-body-tertiary pb-3 pt-5">
       <div class="row row-cols-2">
-        <div class="col mt-auto d-none d-lg-block">
-          <img class="img-fluid" src="/assets/signup.svg" />
+        <div class="col mt-auto d-none d-lg-block my-auto">
+          <img class="img-fluid pt-3" src="/assets/signup2.svg" />
         </div>
         <div class="col mx-auto">
           <div class="row mt-sm-5">
-            <h1 class="">Account Details</h1>
+            <h1 class="text-wrap">Sign Up</h1>
             <small class="mb-2">Personal Information</small>
           </div>
-          <form action="">
+          <form onsubmit="signUp()" class="form" id="form-true">
             <div class="row row-cols-1 row-cols-md-2 name_row">
               <div class="col mb-2">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="fname" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fname"
+                    placeholder="Put First Name Here"
+                    required
+                  />
                   <label for="fname">First Name</label>
                 </div>
               </div>
               <div class="col mb-2">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="lname" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lname"
+                    placeholder="Put Last Name Here"
+                    required
+                  />
                   <label for="fname">Last Name</label>
                 </div>
               </div>
@@ -46,7 +57,13 @@
             <div class="row email_row">
               <div class="col mb-2">
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="email" />
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                    placeholder="Put Email Here"
+                  />
                   <label for="email">Email</label>
                 </div>
               </div>
@@ -54,19 +71,31 @@
             <div class="row password_row">
               <div class="col mb-2">
                 <div class="form-floating">
-                  <input type="password" class="form-control" id="password" />
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    onchange=""
+                    placeholder="Put Password Here"
+                    onchange=""
+                    required
+                  />
                   <label for="password">Password</label>
                 </div>
               </div>
             </div>
             <div class="row conf_password_row">
-              <div class="col mb-2">
+              <div class="col mb-2" id="conf_password_row">
                 <div class="form-floating">
                   <input
                     type="password"
                     class="form-control"
                     id="conf-password"
+                    onchange="passCheck()"
+                    placeholder="Confirm Password Here"
+                    required
                   />
+                  <div class="invalid-feedback">Password Do not match</div>
                   <label for="conf-password">Confirm Password</label>
                 </div>
               </div>
@@ -74,7 +103,15 @@
             <div class="row phone_number_row">
               <div class="col mb-2">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="phone-number" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone-number"
+                    required
+                    placeholder="Put Phone Number Here"
+                    onchange="phoneCheck()"
+                  />
+                  <div class="invalid-feedback">Invalid Phone Number</div>
                   <label for="phone-number">Phone Number</label>
                 </div>
               </div>
@@ -82,7 +119,13 @@
             <div class="row address_row">
               <div class="col mb-2">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="address" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Put Address Here"
+                    required
+                  />
                   <label for="address">Address</label>
                 </div>
               </div>
@@ -97,6 +140,7 @@
                     name="acc-type"
                     id="farmer-type"
                     onchange="radioChange('farmer')"
+                    required
                   />
                   <label class="form-check-label" for="flexRadioDefault1">
                     Farmer
@@ -111,6 +155,7 @@
                     name="acc-type"
                     id="consumer-type"
                     onchange="radioChange('consumer')"
+                    required
                   />
                   <label class="form-check-label" for="flexRadioDefault2">
                     Consumer
@@ -126,17 +171,27 @@
                   id="credentials-label"
                   >Upload File
                 </label>
-                <input type="file" class="form-control" id="credentials" />
+                <input
+                  type="file"
+                  class="form-control"
+                  id="credentials"
+                  required
+                />
               </div>
             </div>
             <div class="row submit_row">
               <div class="col mb-2">
-                <button type="submit" class="btn btn-primary w-100">
+                <button
+                  type="submit"
+                  class="btn btn-success w-100"
+                  id="form-submit"
+                >
                   Submit
                 </button>
               </div>
             </div>
           </form>
+
           <small
             >Already have an account? <a href="Login.html">Log In</a></small
           >

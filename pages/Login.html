@@ -17,14 +17,19 @@
     ></script>
   </head>
   <body>
-    <div class="container login_cont">
+    <div class="container bg-body-tertiary p-5 login_cont">
       <div class="row">
-        <div class="col d-none d-lg-block">
-          <img class="img-fluid" src="/assets/login.svg" alt="Login Pic" lazy />
+        <div class="col d-none d-lg-block my-auto">
+          <img
+            class="img-fluid"
+            src="/assets/login2.svg"
+            alt="Login Pic"
+            lazy
+          />
         </div>
         <div class="col mx-auto">
           <h1 class="form-label text-center">Login</h1>
-          <form novalidate class="">
+          <form novalidate class="" onsubmit="signUp()">
             <div class="form-floating">
               <input
                 type="email"
@@ -43,7 +48,7 @@
               />
               <label for="pass-inp">Password</label>
             </div>
-            <button type="submit" class="btn btn-primary w-100 mb-3">
+            <button type="submit" class="btn btn-success w-100 mb-3">
               Submit
             </button>
           </form>
@@ -53,5 +58,6 @@
         </div>
       </div>
     </div>
+    <script src="/index.js"></script>
   </body>
 </html>
