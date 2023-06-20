@@ -49,6 +49,10 @@ p {
 nav {
   box-shadow: 1px 5px 9px #5d5b5b;
 }
+.logo-pic {
+  width: 10rem;
+  height: 10rem;
+}
 #nav-link:hover {
   color: green;
 }
@@ -123,10 +127,10 @@ nav {
 }
 
 .accordion-cont {
-  border: 1px solid green;
   height: 80rem;
   padding: 10rem;
   overflow: scroll;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 #accordion-head {
   background-color: #6c9c82;
@@ -155,6 +159,21 @@ nav {
   height: 40rem;
   width: 60rem;
   background-color: white;
+  border-radius: 0.5rem;
+}
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #6c9c82;
+  color: #ebf1ea;
+}
+.footer-link {
+  text-decoration: none;
+  color: #ebf1ea;
+}
+.footer-link:hover {
+  color: #215136;
+  transition: 0.5s ease-in-out;
 }
 /* media queries */
 /* XS */
@@ -163,10 +182,10 @@ nav {
     font-size: 5px;
   }
   .title {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .md-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   p {
     font-size: 2.2rem;
@@ -176,6 +195,10 @@ nav {
   }
   .desc {
     text-align: start;
+  }
+  .logo-pic {
+    width: 8rem;
+    height: 8rem;
   }
 }
 /* SM */
