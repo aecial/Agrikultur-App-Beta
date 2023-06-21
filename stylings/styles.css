@@ -6,6 +6,9 @@ html {
   font-size: 10px;
 }
 /* Typography */
+body {
+  font-family: "Merriweather", serif;
+}
 .title {
   font-size: 4rem;
   font-weight: bold;
