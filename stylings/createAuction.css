@@ -79,38 +79,38 @@ p {
 .dropdown-menu {
   width: 15rem !important;
 }
-/* Navigation Bar CSS */
 
-/* Offered Produce Auction */
-.offered-produce {
-  height: 60vh;
-  border-top: 1px solid red;
+.form-card {
+  background-image: linear-gradient(140deg, #6c9c82, #215136);
 }
-.crop-type-selection button {
-  color: black;
-}
-button.active {
-  border-radius: 20px !important;
-  background-color: #198754 !important;
+::-webkit-input-placeholder {
   color: white !important;
 }
-.crop-type-selection {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  border-bottom: 1px solid green;
-}
-.crop-type-selection::-webkit-scrollbar {
-  width: 0 !important;
-}
-/* Offered Produce Auction */
 
+::-moz-placeholder {
+  color: white !important;
+}
+
+::-ms-placeholder {
+  color: white !important;
+}
+
+::placeholder {
+  color: white !important;
+}
+.form-select {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 @media screen and (max-width: 576px) {
   .logo-pic {
     width: 50px;
@@ -124,5 +124,8 @@ button.active {
   }
   .desc {
     font-size: 1.5rem;
+  }
+  form {
+    font-size: 0.1rem !important;
   }
 }

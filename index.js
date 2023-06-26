@@ -56,3 +56,10 @@ function phoneCheck() {
     btn.disabled = false;
   }
 }
+
+function edit(val) {
+  preventDefault();
+
+  let btn = document.getElementById(`${val}`);
+  btn.disabled = false;
+}

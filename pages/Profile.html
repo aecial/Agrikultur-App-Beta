@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <!-- Boostrap CSS -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Boostrap Javascript -->
+    <script
+      defer
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+    <link rel="stylesheet" href="/stylings/Profile.css" />
+    <script
+      src="https://kit.fontawesome.com/fae056ab45.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav
+      class="navbar nav-underline sticky-lg-top navbar-expand-xxl bg-body-tertiary"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand d-flex align-items-center text-success"
+          id="brand"
+          href="#"
+          ><img src="/assets/logo-nobg.png" class="img-fluid logo-pic" />
+          <p class="title">Agrikultur'App</p></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon fs-1"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 text-end d-flex align-items-xxl-center"
+          >
+            <li class="nav-item me-2">
+              <a
+                class="nav-link active text-success"
+                id="nav-link"
+                aria-current="page"
+                href="#hero"
+                ><i class="fa-solid fa-gavel"></i> Auction Page</a
+              >
+            </li>
+            <li class="nav-item d-block d-xxl-none">
+              <a class="nav-link text-success" href="#contact" id="nav-link"
+                ><i class="fa-solid fa-bell"></i> Notifications</a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link text-success" href="#contact" id="nav-link"
+                ><i class="fa-solid fa-table"></i> Pricing Guidelines</a
+              >
+            </li>
+            <li class="nav-item">
+              <p class="desc text-end d-block d-xxl-none">
+                Logged In as:
+                <strong
+                  ><a href="" class="nav-link text-success"
+                    >Teddy Pascual</a
+                  ></strong
+                >
+              </p>
+            </li>
+
+            <li class="nav-item me-2">
+              <a
+                class="btn btn-success w-auto fs-3 d-block d-xxl-none float-end"
+                href="/pages/Login.html"
+                >Sign Out</a
+              >
+            </li>
+          </ul>
+          <div class="nav-pic d-none d-xxl-block btn-group dropdown">
+            <button
+              type="button"
+              class="btn dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="/assets/avatar1.svg" class="img-fluid" />
+            </button>
+            <div
+              class="dropdown-menu fs-3"
+              id="dropdown-menu"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <a class="dropdown-item text-success" href="#"
+                ><i class="fa-solid fa-user"></i> Profile</a
+              >
+              <a class="dropdown-item text-success" href="#"
+                ><i class="fa-solid fa-bell"></i> Notifications</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="btn btn-success w-100 fs-3" href="/pages/Login.html"
+                ><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Navigation Bar-->
+    <main class="container-fluid">
+      <div class="row row-cols-1 row-cols-lg-2 bg-body-secondary">
+        <div class="col d-flex justify-content-center bg-danger-subtle">
+          <img src="/assets/avatar1.svg" alt="" />
+          <button class="btn btn-primary h-25 change-btn">+</button>
+        </div>
+        <div
+          class="col d-flex flex-column align-items-center bg-success-subtle"
+        >
+          <form action="">
+            <div class="form-floating d-flex">
+              <input
+                type="text"
+                class="form-control"
+                id="name_inp"
+                placeholder="Input Name Here"
+                disabled
+              />
+              <label for="name_inp">Teddy Pascual </label>
+              <button class="edit-btn" onclick="edit('name_inp')">Edit</button>
+            </div>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="email_inp"
+                placeholder="Input Email Here"
+              />
+              <label for="email_inp">Email</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="address_inp"
+                placeholder="Input Address Here"
+              />
+              <label for="address_inp">Address</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="mobileNum_inp"
+                placeholder="Input Number Here"
+              />
+              <label for="mobileNum_inp">Phone Number</label>
+            </div>
+            <button type="submit" class="btn btn-success" disabled>Save</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>

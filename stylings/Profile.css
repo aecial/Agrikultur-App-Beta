@@ -79,38 +79,15 @@ p {
 .dropdown-menu {
   width: 15rem !important;
 }
-/* Navigation Bar CSS */
 
-/* Offered Produce Auction */
-.offered-produce {
-  height: 60vh;
-  border-top: 1px solid red;
+main {
+  height: 91.5vh;
 }
-.crop-type-selection button {
-  color: black;
+.change-btn {
+  position: relative;
+  left: -83px;
+  top: 120px;
 }
-button.active {
-  border-radius: 20px !important;
-  background-color: #198754 !important;
-  color: white !important;
-}
-.crop-type-selection {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  border-bottom: 1px solid green;
-}
-.crop-type-selection::-webkit-scrollbar {
-  width: 0 !important;
-}
-/* Offered Produce Auction */
-
 @media screen and (max-width: 576px) {
   .logo-pic {
     width: 50px;
@@ -124,5 +101,8 @@ button.active {
   }
   .desc {
     font-size: 1.5rem;
+  }
+  form {
+    font-size: 0.1rem !important;
   }
 }
