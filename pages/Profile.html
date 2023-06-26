@@ -102,7 +102,7 @@
               id="dropdown-menu"
               aria-labelledby="dropdownMenuButton"
             >
-              <a class="dropdown-item text-success" href="#"
+              <a class="dropdown-item text-success" href="Profile.html"
                 ><i class="fa-solid fa-user"></i> Profile</a
               >
               <a class="dropdown-item text-success" href="#"
@@ -119,54 +119,122 @@
     </nav>
     <!--Navigation Bar-->
     <main class="container-fluid">
-      <div class="row row-cols-1 row-cols-lg-2 bg-body-secondary">
-        <div class="col d-flex justify-content-center bg-danger-subtle">
-          <img src="/assets/avatar1.svg" alt="" />
-          <button class="btn btn-primary h-25 change-btn">+</button>
-        </div>
+      <div class="row row-cols-1 row-cols-lg-2">
         <div
-          class="col d-flex flex-column align-items-center bg-success-subtle"
+          class="col d-flex flex-column align-items-center justify-content-center img-section"
         >
-          <form action="">
-            <div class="form-floating d-flex">
+          <img
+            src="/assets/avatar1.svg"
+            class="img-fluid"
+            alt=""
+            id="profile-pic"
+          />
+          <label for="change-prof" class="md-title mt-5"
+            >Change Profile Picture</label
+          >
+          <form action="" class="w-755">
+            <div class="input-group">
+              <input
+                type="file"
+                class="form-control bg-transparent"
+                id="change-prof"
+                accept="image/png, image/jpeg"
+              />
+              <button
+                type="submit"
+                class="btn btn-success"
+                id="save-img-btn"
+                disabled
+                onclick="saveProfPic()"
+              >
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col d-flex flex-column align-items-center">
+          <form action="" class="fs-5 information-section p-4" id="info-form">
+            <p class="title text-light">Personal Information</p>
+            <div class="d-flex mb-3">
               <input
                 type="text"
                 class="form-control"
                 id="name_inp"
-                placeholder="Input Name Here"
+                placeholder="Teddy Pascual"
+                onchange="boom()"
                 disabled
               />
-              <label for="name_inp">Teddy Pascual </label>
-              <button class="edit-btn" onclick="edit('name_inp')">Edit</button>
+              <button
+                class="edit-btn text-success"
+                id="edit-info-btn"
+                type="button"
+                onclick='ror("name_inp")'
+              >
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
             </div>
-            <div class="form-floating">
+            <div class="d-flex mb-3">
               <input
                 type="text"
                 class="form-control"
                 id="email_inp"
-                placeholder="Input Email Here"
+                placeholder="kledted23@gmail.com"
+                onchange="boom()"
+                disabled
               />
-              <label for="email_inp">Email</label>
+              <button
+                class="edit-btn text-success"
+                id="edit-info-btn"
+                type="button"
+                onclick='ror("email_inp")'
+              >
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
             </div>
-            <div class="form-floating">
+            <div class="d-flex mb-3">
               <input
                 type="text"
                 class="form-control"
                 id="address_inp"
-                placeholder="Input Address Here"
+                placeholder="Capas,Tarlac"
+                onchange="boom()"
+                disabled
               />
-              <label for="address_inp">Address</label>
+              <button
+                class="edit-btn text-success"
+                id="edit-info-btn"
+                type="button"
+                onclick='ror("address_inp")'
+              >
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
             </div>
-            <div class="form-floating">
+            <div class="d-flex mb-3">
               <input
                 type="text"
                 class="form-control"
                 id="mobileNum_inp"
-                placeholder="Input Number Here"
+                placeholder="09982409945"
+                onchange="boom()"
+                disabled
               />
-              <label for="mobileNum_inp">Phone Number</label>
+              <button
+                class="edit-btn text-success"
+                id="edit-info-btn"
+                type="button"
+                onclick='ror("mobileNum_inp")'
+              >
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
             </div>
-            <button type="submit" class="btn btn-success" disabled>Save</button>
+            <button
+              type="submit"
+              class="btn btn-success fs-1"
+              id="save-btn"
+              disabled
+            >
+              Save
+            </button>
           </form>
         </div>
       </div>

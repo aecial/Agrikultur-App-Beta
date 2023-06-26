@@ -83,8 +83,8 @@ p {
 
 /* Offered Produce Auction */
 .offered-produce {
-  height: 60vh;
-  border-top: 1px solid red;
+  height: auto;
+  background-image: linear-gradient(140deg, #6c9c82, #215136);
 }
 .crop-type-selection button {
   color: black;
@@ -124,5 +124,8 @@ button.active {
   }
   .desc {
     font-size: 1.5rem;
+  }
+  .md-title {
+    font-size: 2.5rem;
   }
 }

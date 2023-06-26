@@ -57,9 +57,30 @@ function phoneCheck() {
   }
 }
 
-function edit(val) {
+function edit() {
   preventDefault();
-
-  let btn = document.getElementById(`${val}`);
+  let btn = document.querySelector(".form-control");
+  alert(val);
   btn.disabled = false;
+}
+
+let img = document.getElementById("profile-pic");
+let input = document.getElementById("change-prof");
+let saveImg = document.getElementById("save-img-btn");
+let mySaveBtn = document.getElementById("save-btn");
+input.addEventListener("change", () => {
+  img.src = URL.createObjectURL(input.files[0]);
+  saveImg.disabled = false;
+});
+
+saveImg.addEventListener("onclick", (e) => {
+  e.preventDefault();
+});
+
+function ror(val) {
+  document.getElementById(`${val}`).disabled = false;
+}
+
+function boom() {
+  mySaveBtn.disabled = false;
 }
