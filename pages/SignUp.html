@@ -17,14 +17,23 @@
     ></script>
   </head>
   <body>
-    <div class="container my-auto bg-body-tertiary pb-3 pt-5">
+    <!--Main Div-->
+    <main class="container my-auto bg-body-tertiary pb-3 pt-5">
       <div class="row row-cols-2">
+        <!--Image Container-->
         <div class="col mt-auto d-none d-lg-block my-auto">
-          <img class="img-fluid pt-3" src="/assets/signup2.svg" />
+          <img
+            class="img-fluid pt-3"
+            src="/assets/signup2.svg"
+            id="signUpVect"
+          />
         </div>
+        <!--Image Container-->
+
+        <!--Form Container-->
         <div class="col mx-auto">
           <div class="row mt-sm-5">
-            <h1 class="text-wrap">Sign Up</h1>
+            <h1 class="text-wrap">Account Details</h1>
             <small class="mb-2">Personal Information</small>
           </div>
           <form onsubmit="signUp()" class="form" id="form-true">
@@ -169,12 +178,28 @@
                   for="credentials"
                   class="form-label"
                   id="credentials-label"
-                  >Upload File
+                  >Upload File:
                 </label>
                 <input
                   type="file"
                   class="form-control"
                   id="credentials"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row pic_row">
+              <div class="col mb-3">
+                <label
+                  for="credentials"
+                  class="form-label"
+                  id="credentials-label"
+                  >Upload Profile Picture:
+                </label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="pic-sign-up"
                   required
                 />
               </div>
@@ -203,9 +228,10 @@
             >Already have an account? <a href="Login.html">Log In</a></small
           >
         </div>
+        <!--Form Container-->
       </div>
-    </div>
-
-    <script src="/index.js"></script>
+    </main>
+    <!--Main Div-->
+    <script src="/signUp.js"></script>
   </body>
 </html>

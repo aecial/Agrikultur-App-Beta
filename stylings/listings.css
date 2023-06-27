@@ -4,6 +4,24 @@
 html {
   font-size: 10px;
 }
+#brand {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+#nav-link {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+#Login-btn {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+nav {
+  box-shadow: 1px 2px 5px #5d5b5b;
+}
 
 /* Typography */
 body {
@@ -36,13 +54,19 @@ p {
   font-weight: bold;
   font-family: "Oswald", sans-serif;
 }
-
+#Login-btn {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+#start-btn {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
 /* Typography */
 
 /* Navigation Bar CSS */
-nav {
-  box-shadow: 1px 2px 5px #5d5b5b;
-}
 .nav-pic {
   width: 15rem;
   height: 15rem;
@@ -61,6 +85,12 @@ nav {
 .offered-produce {
   height: auto;
   background-image: linear-gradient(140deg, #6c9c82, #215136);
+}
+.new-text-btn {
+  text-align: center;
+}
+.new-text-btn:hover {
+  color: white;
 }
 .crop-type-selection button {
   color: black;
@@ -82,11 +112,11 @@ button.active {
   overflow-y: hidden;
   border-bottom: 1px solid green;
 }
-.offered-produce .nav-link:hover {
-  color: white !important;
-}
 .crop-type-selection::-webkit-scrollbar {
   width: 0 !important;
+}
+.offered-produce .nav-link:hover {
+  color: white !important;
 }
 /* Offered Produce Auction */
 
