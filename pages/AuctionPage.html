@@ -155,7 +155,7 @@
     <!--Offered Produce Section-->
     <section class="offered-produce container-fluid p-5" id="offered">
       <!--2 Arrows Div-->
-      <div class="float-end d-lg-none">
+      <div class="float-end d-lg-none text-light">
         <i class="fa-solid fa-chevron-right"></i>
         <i class="fa-solid fa-chevron-right"></i>
       </div>
@@ -172,26 +172,40 @@
           <li class="nav-item" role="presentation">
             <button
               class="nav-link active tab-btn"
-              id="pills-home-tab"
+              id="pills-ampalaya-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-home"
+              data-bs-target="#pills-ampalaya"
               type="button"
               role="tab"
-              aria-controls="pills-home"
+              aria-controls="pills-ampalaya"
               aria-selected="true"
             >
-              Sibuyas
+              Ampalaya
             </button>
           </li>
           <li class="nav-item" role="presentation">
             <button
               class="nav-link"
-              id="pills-profile-tab"
+              id="pills-kalabasa-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
+              data-bs-target="#pills-kalabasa"
               type="button"
               role="tab"
-              aria-controls="pills-profile"
+              aria-controls="pills-kalabasa"
+              aria-selected="false"
+            >
+              Kalabasa
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-kamatis-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-kamatis"
+              type="button"
+              role="tab"
+              aria-controls="pills-kamatis"
               aria-selected="false"
             >
               Kamatis
@@ -200,71 +214,43 @@
           <li class="nav-item" role="presentation">
             <button
               class="nav-link"
-              id="pills-profile-tab"
+              id="pills-okra-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
+              data-bs-target="#pills-okra"
               type="button"
               role="tab"
-              aria-controls="pills-profile"
+              aria-controls="pills-okra"
               aria-selected="false"
             >
-              Profile
+              Okra
             </button>
           </li>
           <li class="nav-item" role="presentation">
             <button
               class="nav-link"
-              id="pills-profile-tab"
+              id="pills-sigarilyas-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
+              data-bs-target="#pills-sigarilyas"
               type="button"
               role="tab"
-              aria-controls="pills-profile"
+              aria-controls="pills-sigarilyas"
               aria-selected="false"
             >
-              Profile
+              Sigarilyas
             </button>
           </li>
           <li class="nav-item" role="presentation">
             <button
               class="nav-link"
-              id="pills-profile-tab"
+              id="pills-sitaw-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
+              data-bs-target="#pills-sitaw"
               type="button"
               role="tab"
-              aria-controls="pills-profile"
+              aria-controls="pills-sitaw"
               aria-selected="false"
             >
-              Profile
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false"
-            >
-              Contact
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-garlic-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-garlic"
-              type="button"
-              role="tab"
-              aria-controls="pills-garlic"
-              aria-selected="false"
-            >
-              Garlic
+              Sitaw
             </button>
           </li>
         </ul>
@@ -277,67 +263,119 @@
         >
           <div
             class="tab-pane fade show active"
-            id="pills-home"
+            id="pills-ampalaya"
             role="tabpanel"
-            aria-labelledby="pills-home-tab"
+            aria-labelledby="pills-ampalaya-tab"
             tabindex="0"
           >
             <div class="card" style="width: 30rem">
               <img
                 class="card-img-top"
-                src="/assets/signup.svg"
+                src="/assets/Ampalaya.jpeg"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Sibuyas</h5>
-                <p class="desc">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <h5 class="card-title md-title">Ampalaya</h5>
                 <a href="Sibuyas.html" class="btn btn-success">View Auctions</a>
               </div>
             </div>
           </div>
           <div
             class="tab-pane fade"
-            id="pills-profile"
+            id="pills-kalabasa"
             role="tabpanel"
-            aria-labelledby="pills-profile-tab"
+            aria-labelledby="pills-kalabasa-tab"
             tabindex="0"
           >
             <div class="card" style="width: 30rem">
               <img
                 class="card-img-top"
-                src="/assets/cabbage.png"
+                src="/assets/Kalabasa.jpg"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Kamatis</h5>
-                <p class="desc">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <h5 class="card-title md-title">Kalabasa</h5>
+                <a href="Ampalaya.html" class="btn btn-success"
+                  >View Auctions</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-kamatis"
+            role="tabpanel"
+            aria-labelledby="pills-kamatis-tab"
+            tabindex="0"
+          >
+            <div class="card" style="width: 30rem">
+              <img
+                class="card-img-top"
+                src="/assets/Tomato.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title md-title">Kamatis</h5>
                 <a href="#" class="btn btn-success">View Auctions</a>
               </div>
             </div>
           </div>
           <div
             class="tab-pane fade"
-            id="pills-contact"
+            id="pills-okra"
             role="tabpanel"
-            aria-labelledby="pills-contact-tab"
+            aria-labelledby="pills-okra-tab"
             tabindex="0"
           >
-            L
+            <div class="card" style="width: 30rem">
+              <img
+                class="card-img-top"
+                src="/assets/Okra.jpeg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title md-title">Okra</h5>
+                <a href="#" class="btn btn-success">View Auctions</a>
+              </div>
+            </div>
           </div>
           <div
             class="tab-pane fade"
-            id="pills-garlic"
+            id="pills-sigarilyas"
             role="tabpanel"
-            aria-labelledby="pills-garlic-tab"
+            aria-labelledby="pills-sigarilyas-tab"
             tabindex="0"
           >
-            Garlic
+            <div class="card" style="width: 30rem">
+              <img
+                class="card-img-top"
+                src="/assets/sigarilyas.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sigarilyas</h5>
+                <a href="#" class="btn btn-success">View Auctions</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-sitaw"
+            role="tabpanel"
+            aria-labelledby="pills-sitaw-tab"
+            tabindex="0"
+          >
+            <div class="card" style="width: 30rem">
+              <img
+                class="card-img-top"
+                src="/assets/sitaw.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sitaw</h5>
+                <a href="#" class="btn btn-success">View Auctions</a>
+              </div>
+            </div>
           </div>
         </div>
         <!--Mobile Pill Content-->
@@ -348,80 +386,46 @@
       <div
         class="desktop-view d-flex justify-content-evenly gap-5 d-none d-lg-flex"
       >
-        <div class="card" style="width: 18rem">
-          <img src="/assets/cabbage2.png" class="card-img-top" alt="" />
+        <div class="card">
+          <img src="/assets/Ampalaya.jpeg" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Sibuyas</h5>
-            <p class="card-text">
-              Sibuyass example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="Sibuyas.html" class="btn btn-success">View Auctions</a>
+            <h5 class="card-title md-title">Ampalaya</h5>
+            <a href="Ampalaya.html" class="btn btn-success">View Auctions</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img src="/assets/cabbage2.png" class="card-img-top" alt="" />
+        <div class="card">
+          <img src="/assets/Kalabasa.jpg" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+            <h5 class="card-title md-title">Kalabasa</h5>
+
             <a href="#" class="btn btn-success">View Auctions</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img src="/assets/cabbage2.png" class="card-img-top" alt="" />
+        <div class="card">
+          <img src="/assets/Tomato.png" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+            <h5 class="card-title md-title">Kamatis</h5>
             <a href="#" class="btn btn-success">View Auctions</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img src="/assets/cabbage2.png" class="card-img-top" alt="" />
+        <div class="card">
+          <img src="/assets/Okra.jpeg" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+            <h5 class="card-title md-title">Okra</h5>
             <a href="#" class="btn btn-success">View Auctions</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img src="/assets/cabbage2.png" class="card-img-top" alt="" />
+        <div class="card">
+          <img src="/assets/sigarilyas.jpg" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+            <h5 class="card-title md-title">Sigarilyas</h5>
             <a href="#" class="btn btn-success">View Auctions</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img src="/assets/cabbage2.png" class="card-img-top" alt="" />
+        <div class="card">
+          <img src="/assets/sitaw.jpg" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-success">View Auctions</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="/assets/cabbage2.png" class="card-img-top" alt="" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+            <h5 class="card-title md-title">Sitaw</h5>
             <a href="#" class="btn btn-success">View Auctions</a>
           </div>
         </div>

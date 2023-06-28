@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="/stylings/Admin.css" />
+    <!-- Boostrap CSS -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Boostrap Javascript -->
+    <script
+      defer
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+    <link rel="stylesheet" href="/stylings/createAuction.css" />
+    <script
+      src="https://kit.fontawesome.com/fae056ab45.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Links-->
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav
+      class="navbar nav-underline sticky-lg-top navbar-expand-xxl bg-body-tertiary"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand d-flex align-items-center text-success"
+          id="brand"
+          href="#"
+          ><img src="/assets/logo-nobg.png" class="img-fluid logo-pic" />
+          <p class="title">Agrikultur'App</p></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon fs-1"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 text-end d-flex align-items-xxl-center"
+          >
+            <li class="nav-item me-2">
+              <a
+                class="nav-link text-success"
+                id="nav-link"
+                aria-current="page"
+                href="AuctionPage.html"
+                ><i class="fa-solid fa-gavel"></i> Manage Auction</a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a
+                class="nav-link text-success"
+                id="nav-link"
+                aria-current="page"
+                href="AuctionPage.html"
+                ><i class="fa-solid fa-users"></i> Manage Users</a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link text-success" href="#contact" id="nav-link"
+                ><i class="fa-solid fa-table"></i> View/Update Pricing
+                Guidelines</a
+              >
+            </li>
+
+            <li class="nav-item me-2">
+              <a
+                class="btn btn-success w-auto fs-3 d-block d-xxl-none float-end"
+                href="/pages/Login.html"
+                ><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a
+              >
+            </li>
+          </ul>
+          <div class="nav-pic d-none d-xxl-block btn-group dropdown">
+            <button
+              type="button"
+              class="btn dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="/assets/avatar1.svg" class="img-fluid" />
+            </button>
+            <div
+              class="dropdown-menu fs-3"
+              id="dropdown-menu"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <a class="btn btn-success w-100 fs-3" href="/pages/Login.html"
+                ><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Navigation Bar-->
+    <main>
+      <div class="container">
+        <p class="title text-success mb-5">What would you like to do?</p>
+        <div class="row gap-5 gap-lg-2">
+          <div class="row">
+            <div
+              class="col-12 d-flex justify-content-between align-items-center"
+            >
+              <img
+                class="img-fluid d-none d-lg-block"
+                src="/assets/manageAuctions.svg"
+              />
+              <a href="" class="btn btn-success link-btn">Manage Auctions</a>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-12 d-flex justify-content-between align-items-center"
+            >
+              <img
+                class="img-fluid d-none d-lg-block"
+                src="/assets/manageUsers.svg"
+              />
+              <a href="" class="btn btn-success link-btn">Manage Users</a>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-12 d-flex justify-content-between align-items-center"
+            >
+              <img
+                class="img-fluid d-none d-lg-block"
+                src="/assets/manageGuidelines.svg"
+              />
+              <a href="" class="btn btn-success link-btn"
+                >View/Update Pricing</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

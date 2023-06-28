@@ -122,6 +122,15 @@ button.active {
 .offered-produce .nav-link:hover {
   color: white !important;
 }
+.card-img-top {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+.card {
+  width: 25rem !important;
+  height: auto !important;
+}
 /* Offered Produce Auction */
 
 @media screen and (max-width: 576px) {

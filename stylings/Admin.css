@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+/* Typography */
+body {
+  font-family: "Merriweather", serif;
+}
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+.md-title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+p {
+  font-size: 3rem;
+}
+.desc {
+  text-indent: 1rem;
+  text-align: justify;
+}
+#brand {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+
+#nav-link {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+/* Typography */
+
+/* Navigation Bar CSS */
+nav {
+  box-shadow: 1px 2px 5px #5d5b5b;
+}
+.nav-pic {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+#nav-link,
+#brand {
+  color: #6c9c82 !important;
+}
+.logo-pic {
+  width: 15rem;
+  height: 15rem;
+}
+#nav-link,
+#brand {
+  color: #6c9c82 !important;
+}
+
+.link-btn {
+  width: 50rem;
+  height: 7rem;
+  font-size: 4rem !important;
+}
+@media screen and (max-width: 1558px) {
+  #nav-link {
+    font-size: 2.5rem !important;
+  }
+}
+@media screen and (max-width: 1410px) {
+  #nav-link {
+    font-size: 2rem !important;
+  }
+}
