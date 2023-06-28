@@ -134,6 +134,10 @@ button.active {
   width: 25rem !important;
   height: auto !important;
 }
+.highlight-text {
+  color: #198754;
+  font-weight: bold;
+}
 /* Offered Produce Auction */
 
 @media screen and (max-width: 576px) {
