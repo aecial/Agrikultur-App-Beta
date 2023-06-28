@@ -55,6 +55,10 @@ nav {
 .dropdown-menu {
   width: 15rem !important;
 }
+#nav-link,
+#brand {
+  color: #6c9c82 !important;
+}
 /* Navigation Bar CSS */
 
 /* Offered Produce Auction */

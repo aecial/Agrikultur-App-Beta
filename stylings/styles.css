@@ -58,8 +58,9 @@ nav {
   width: 10rem;
   height: 10rem;
 }
-#nav-link:hover {
-  color: green;
+#nav-link,
+#brand {
+  color: #6c9c82 !important;
 }
 /* NavBar Styling */
 
@@ -86,13 +87,13 @@ nav {
   background-image: linear-gradient(60deg, #6c9c82, #215136);
   z-index: -1;
 }
-.kamatis {
+.repolyo {
   position: absolute;
   right: 2rem;
   top: 23rem;
   z-index: -1;
 }
-.kamatis img {
+.repolyo img {
   width: 80rem;
   height: 70rem;
   filter: grayscale(10%);
@@ -170,6 +171,9 @@ nav {
   background-color: #6c9c82;
   color: white;
 }
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
 /* FAQS Styling */
 
 /* Footer Styling */
@@ -235,33 +239,33 @@ footer {
   html {
     font-size: 9px;
   }
-  .kamatis {
+  .repolyo {
     display: none;
   }
 }
 @media screen and (max-width: 1365px) {
-  .kamatis {
+  .repolyo {
     right: 0;
   }
-  .kamatis {
+  .repolyo {
     display: none;
   }
 }
 /* Cabbage MQ */
 @media screen and (max-width: 2126px) {
-  .kamatis img {
+  .repolyo img {
     width: 70rem;
     height: 60rem;
   }
 }
 @media screen and (max-width: 1902px) {
-  .kamatis img {
+  .repolyo img {
     width: 60rem;
     height: 50rem;
   }
 }
 @media screen and (max-width: 1638px) {
-  .kamatis img {
+  .repolyo img {
     width: 50rem;
     height: 40rem;
   }

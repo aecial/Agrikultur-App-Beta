@@ -48,6 +48,10 @@ nav {
   height: 15rem;
   border-radius: 50%;
 }
+#nav-link,
+#brand {
+  color: #6c9c82 !important;
+}
 .logo-pic {
   width: 15rem;
   height: 15rem;
@@ -58,6 +62,11 @@ nav {
 
 .form-card {
   background-image: linear-gradient(140deg, #6c9c82, #215136);
+  width: 100%;
+  height: 70vh !important;
+}
+#createForm {
+  margin-top: 10%;
 }
 /* Placeholder Color */
 ::-webkit-input-placeholder {
@@ -98,6 +107,9 @@ input[type="number"] {
   .title {
     font-size: 3rem;
   }
+  .md-title {
+    font-size: 2rem;
+  }
   #nav-link {
     font-size: 2rem;
   }
@@ -106,5 +118,8 @@ input[type="number"] {
   }
   form {
     font-size: 0.1rem !important;
+  }
+  #createForm {
+    margin-top: 35%;
   }
 }

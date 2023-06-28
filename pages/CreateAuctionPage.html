@@ -136,14 +136,12 @@
     <!--Navigation Bar-->
 
     <!--Create Form Section-->
-    <section class="container-fluid w-100 create-form-section">
-      <div class="container-fluid w-100">
-        <div
-          class="min-vh-100 d-flex justify-content-center align-items-center"
-        >
-          <div class="card w-75 h-100 form-card">
-            <div class="card-body h-50">
-              <form class="d-flex flex-column" action="">
+    <section class="container-fluid create-form-section">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="card mt-5 form-card">
+            <div class="card-body">
+              <form class="d-flex flex-column" id="createForm" action="">
                 <!--Select Input-->
                 <select
                   id="crop_category"
@@ -203,6 +201,24 @@
                   />
                 </div>
                 <!--Volume Input-->
+
+                <!--Picture Input-->
+                <label for="crop_picture" class="text-light md-title"
+                  >Upload Picture of your Produce</label
+                >
+                <div class="input-group mb-3 bg-transparent">
+                  <input
+                    onkeyup="btnDis()"
+                    id="crop_picture"
+                    type="file"
+                    accept="image/png, image/jpeg"
+                    class="form-control fs-1 bg-transparent text-light"
+                    placeholder="Picture"
+                    aria-label="Picture"
+                    required
+                  />
+                </div>
+                <!--Picture Input-->
 
                 <div class="d-flex justify-content-between mt-3">
                   <!--Utility Buttons-->

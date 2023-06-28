@@ -79,6 +79,10 @@ p {
 .dropdown-menu {
   width: 15rem !important;
 }
+#nav-link,
+#brand {
+  color: #6c9c82 !important;
+}
 /* Navigation Bar CSS */
 
 /* Offered Produce Auction */
@@ -89,7 +93,7 @@ p {
 .new-text-btn {
   text-align: center;
 }
-.new-text-btn:hover {
+.new-text-btn {
   color: white;
 }
 .crop-type-selection button {
