@@ -87,7 +87,7 @@ p {
 
 /* Offered Produce Auction */
 .offered-produce {
-  height: auto;
+  height: 100%;
   background-image: linear-gradient(140deg, #6c9c82, #215136);
 }
 .new-text-btn {
@@ -126,6 +126,9 @@ button.active {
   width: 100%;
   height: 18rem;
   object-fit: cover;
+}
+.desktop-view {
+  height: 100%;
 }
 .card {
   width: 25rem !important;
