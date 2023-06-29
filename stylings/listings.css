@@ -132,7 +132,7 @@ button.active {
 }
 .card {
   width: 25rem !important;
-  height: auto !important;
+  height: 45rem !important;
 }
 .highlight-text {
   color: #198754;
