@@ -3,19 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Management</title>
-    <link rel="stylesheet" href="/stylings/ManageUsers.css" />
-    <!-- Boostrap CSS -->
+    <title>Produce Pricing Guidelines</title>
+    <!--Custom CSS Tag-->
+    <link rel="stylesheet" href="/stylings/Guidelines.css" />
+    <!--Custom CSS Tag-->
+
+    <!--Bootstrap CSS Tag-->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
     />
-    <!-- Boostrap Javascript -->
+    <!--Bootstrap CSS Tag-->
+
+    <!--Bootstrap JS Tag-->
     <script
       defer
-      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/stylings/createAuction.css" />
+    <!--Bootstrap JS Tag-->
     <script
       src="https://kit.fontawesome.com/fae056ab45.js"
       crossorigin="anonymous"
@@ -33,7 +42,6 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
       rel="stylesheet"
     />
-    <!--Font Links-->
   </head>
   <body>
     <!--Navigation Bar-->
@@ -65,37 +73,41 @@
           >
             <li class="nav-item me-2">
               <a
-                class="nav-link text-success"
+                class="nav-link active text-success"
                 id="nav-link"
                 aria-current="page"
-                href="ManageAuctions.html"
-                ><i class="fa-solid fa-gavel"></i> Manage Auction</a
+                href="AuctionPage.html"
+                ><i class="fa-solid fa-gavel"></i> Auction Page</a
+              >
+            </li>
+            <li class="nav-item d-block d-xxl-none">
+              <a class="nav-link text-success" href="#contact" id="nav-link"
+                ><i class="fa-solid fa-bell"></i> Notifications</a
               >
             </li>
             <li class="nav-item me-2">
-              <a
-                class="nav-link text-success"
-                id="nav-link"
-                aria-current="page"
-                href="ManageUsers.html"
-                ><i class="fa-solid fa-users"></i> Manage Users</a
+              <a class="nav-link text-success" href="#contact" id="nav-link"
+                ><i class="fa-solid fa-table"></i> Pricing Guidelines</a
               >
             </li>
-            <li class="nav-item me-2">
-              <a
-                class="nav-link text-success"
-                href="UpdateGuidelines.html"
-                id="nav-link"
-                ><i class="fa-solid fa-table"></i> View/Update Pricing
-                Guidelines</a
-              >
+            <li class="nav-item">
+              <p class="desc text-end d-block d-xxl-none">
+                Logged In as:
+                <strong
+                  ><a
+                    href="Profile.html"
+                    class="nav-link text-success text-decoration-underline"
+                    >Teddy Pascual</a
+                  ></strong
+                >
+              </p>
             </li>
 
             <li class="nav-item me-2">
               <a
                 class="btn btn-success w-auto fs-3 d-block d-xxl-none float-end"
                 href="/pages/Login.html"
-                ><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a
+                >Sign Out</a
               >
             </li>
           </ul>
@@ -115,6 +127,13 @@
               id="dropdown-menu"
               aria-labelledby="dropdownMenuButton"
             >
+              <a class="dropdown-item text-success" href="Profile.html"
+                ><i class="fa-solid fa-user"></i> Profile</a
+              >
+              <a class="dropdown-item text-success" href="#"
+                ><i class="fa-solid fa-bell"></i> Notifications</a
+              >
+              <div class="dropdown-divider"></div>
               <a class="btn btn-success w-100 fs-3" href="/pages/Login.html"
                 ><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a
               >
@@ -124,65 +143,51 @@
       </div>
     </nav>
     <!--Navigation Bar-->
-
-    <main class="container-fluid overflow-x-scroll">
-      <!--Header-->
-      <div class="d-flex justify-content-between align-items-center">
-        <p class="title">Users</p>
-        <form class="d-flex gap-2">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-            id="myInput"
-            onkeyup="myFunction()"
-          />
-        </form>
-      </div>
-
-      <table class="table" id="myTable">
+    <main class="container-fluid">
+      <p class="md-title">Last Updated: January 2, 2023</p>
+      <table class="table text-center text-md-start" id="myTable">
         <thead class="bg-success">
           <tr>
             <th scope="col" class="bg-success text-light">Photo</th>
-            <th scope="col" class="bg-success text-light">Name</th>
-            <th scope="col" class="bg-success text-light">Contact Number</th>
-            <th scope="col" class="bg-success text-light">Email</th>
-            <th scope="col" class="bg-success text-light">Action</th>
+            <th scope="col" class="bg-success text-light">Produce</th>
+            <th scope="col" class="bg-success text-light">
+              Market Price per Kg
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><img src="/assets/avatar1.svg" /></td>
-            <td class="md-title">Teddy Pascual</td>
-            <td>09982409945</td>
-            <td>kledted23@gmail.com</td>
-            <td><button class="btn btn-outline-danger">Ban User</button></td>
+            <td><img src="/assets/Ampalaya.jpeg" /></td>
+            <td class="md-title">Ampalaya</td>
+            <td class="md-title text-success">₱20</td>
           </tr>
           <tr>
-            <td><img src="/assets/avatar1.svg" /></td>
-            <td class="md-title">Denmark</td>
-            <td>123123</td>
-            <td>becu@gmail.com</td>
-            <td><button class="btn btn-outline-danger">Ban User</button></td>
+            <td><img src="/assets/Kalabasa.jpg" /></td>
+            <td class="md-title">Kalabasa</td>
+            <td class="md-title text-success">₱40</td>
           </tr>
           <tr>
-            <td><img src="/assets/avatar1.svg" /></td>
-            <td class="md-title">Darren</td>
-            <td>321321</td>
-            <td>bhozsx@gmail.com</td>
-            <td><button class="btn btn-outline-danger">Ban User</button></td>
+            <td><img src="/assets/Tomato.png" /></td>
+            <td class="md-title">Kamatis</td>
+            <td class="md-title text-success">₱50</td>
           </tr>
           <tr>
-            <td><img src="/assets/avatar1.svg" /></td>
-            <td class="md-title">Emmanuel</td>
-            <td>321321</td>
-            <td>bhozsx@gmail.com</td>
-            <td><button class="btn btn-outline-danger">Ban User</button></td>
+            <td><img src="/assets/Okra.jpeg" /></td>
+            <td class="md-title">Okra</td>
+            <td class="md-title text-success">₱10</td>
+          </tr>
+          <tr>
+            <td><img src="/assets/sigarilyas.jpg" /></td>
+            <td class="md-title">Sigarilyas</td>
+            <td class="md-title text-success">₱10</td>
+          </tr>
+          <tr>
+            <td><img src="/assets/sitaw.jpg" /></td>
+            <td class="md-title">Sitaw</td>
+            <td class="md-title text-success">₱10</td>
           </tr>
         </tbody>
       </table>
     </main>
-    <script src="/tableSearch.js"></script>
   </body>
 </html>

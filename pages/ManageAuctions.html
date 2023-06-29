@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Page</title>
-    <link rel="stylesheet" href="/stylings/Admin.css" />
+    <title>Auction Management</title>
+    <link rel="stylesheet" href="/stylings/ManageAuctions.css" />
     <!-- Boostrap CSS -->
     <link
       rel="stylesheet"
@@ -68,7 +68,7 @@
                 class="nav-link text-success"
                 id="nav-link"
                 aria-current="page"
-                href="AuctionPage.html"
+                href="ManageAuctions.html"
                 ><i class="fa-solid fa-gavel"></i> Manage Auction</a
               >
             </li>
@@ -77,7 +77,7 @@
                 class="nav-link text-success"
                 id="nav-link"
                 aria-current="page"
-                href="AuctionPage.html"
+                href="ManageUsers.html"
                 ><i class="fa-solid fa-users"></i> Manage Users</a
               >
             </li>
@@ -121,51 +121,73 @@
       </div>
     </nav>
     <!--Navigation Bar-->
-    <main>
-      <div class="container">
-        <p class="title text-success mb-5">What would you like to do?</p>
-        <div class="row gap-5 gap-lg-2">
-          <div class="row">
-            <div
-              class="col-12 d-flex justify-content-between align-items-center"
-            >
-              <img
-                class="img-fluid d-none d-lg-block"
-                src="/assets/manageAuctions.svg"
-              />
-              <a href="ManageAuctions.html" class="btn btn-success link-btn"
-                >Manage Auctions</a
-              >
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-12 d-flex justify-content-between align-items-center"
-            >
-              <img
-                class="img-fluid d-none d-lg-block"
-                src="/assets/manageUsers.svg"
-              />
-              <a href="ManageUsers.html" class="btn btn-success link-btn"
-                >Manage Users</a
-              >
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-12 d-flex justify-content-between align-items-center"
-            >
-              <img
-                class="img-fluid d-none d-lg-block"
-                src="/assets/manageGuidelines.svg"
-              />
-              <a href="" class="btn btn-success link-btn"
-                >View/Update Pricing</a
-              >
-            </div>
-          </div>
-        </div>
+
+    <main class="container-fluid overflow-x-scroll">
+      <!--Header-->
+      <div class="d-flex justify-content-between align-items-center">
+        <p class="title">Active Listings</p>
+        <form class="d-flex gap-2">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="myInput"
+            onkeyup="myFunction2()"
+          />
+        </form>
       </div>
+
+      <table class="table" id="myTable">
+        <thead class="bg-success">
+          <tr>
+            <th scope="col" class="bg-success text-light">Auction Id</th>
+            <th scope="col" class="bg-success text-light">Crop Type</th>
+            <th scope="col" class="bg-success text-light">Date</th>
+            <th scope="col" class="bg-success text-light">Owner</th>
+            <th scope="col" class="bg-success text-light">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12312124312</td>
+            <td>Ampalaya</td>
+            <td>January 23-24 7am</td>
+            <td>Teddy</td>
+            <td>
+              <button class="btn btn-outline-danger">Remove Auction</button>
+            </td>
+          </tr>
+          <tr>
+            <td>123156422312</td>
+            <td>Sitaw</td>
+            <td>January 23-24 7am</td>
+            <td>Denmark</td>
+            <td>
+              <button class="btn btn-outline-danger">Remove Auction</button>
+            </td>
+          </tr>
+          <tr>
+            <td>121242312312</td>
+            <td>Kalabasa</td>
+            <td>January 23-24 7am</td>
+            <td>Darren</td>
+            <td>
+              <button class="btn btn-outline-danger">Remove Auction</button>
+            </td>
+          </tr>
+          <tr>
+            <td>123542312312</td>
+            <td>Sigarilyas</td>
+            <td>January 23-24 7am</td>
+            <td>Emmanuel</td>
+            <td>
+              <button class="btn btn-outline-danger">Remove Auction</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </main>
+    <script src="/auctionSearch.js"></script>
   </body>
 </html>

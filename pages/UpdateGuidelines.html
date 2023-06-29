@@ -3,19 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Page</title>
-    <link rel="stylesheet" href="/stylings/Admin.css" />
-    <!-- Boostrap CSS -->
+    <title>Produce Pricing Guidelines</title>
+    <!--Custom CSS Tag-->
+    <link rel="stylesheet" href="/stylings/Guidelines.css" />
+    <!--Custom CSS Tag-->
+
+    <!--Bootstrap CSS Tag-->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
     />
-    <!-- Boostrap Javascript -->
+    <!--Bootstrap CSS Tag-->
+
+    <!--Bootstrap JS Tag-->
     <script
       defer
-      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/stylings/createAuction.css" />
+    <!--Bootstrap JS Tag-->
     <script
       src="https://kit.fontawesome.com/fae056ab45.js"
       crossorigin="anonymous"
@@ -33,7 +42,6 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
       rel="stylesheet"
     />
-    <!--Font Links-->
   </head>
   <body>
     <!--Navigation Bar-->
@@ -68,7 +76,7 @@
                 class="nav-link text-success"
                 id="nav-link"
                 aria-current="page"
-                href="AuctionPage.html"
+                href="ManageAuctions.html"
                 ><i class="fa-solid fa-gavel"></i> Manage Auction</a
               >
             </li>
@@ -77,7 +85,7 @@
                 class="nav-link text-success"
                 id="nav-link"
                 aria-current="page"
-                href="AuctionPage.html"
+                href="ManageUsers.html"
                 ><i class="fa-solid fa-users"></i> Manage Users</a
               >
             </li>
@@ -121,51 +129,54 @@
       </div>
     </nav>
     <!--Navigation Bar-->
-    <main>
-      <div class="container">
-        <p class="title text-success mb-5">What would you like to do?</p>
-        <div class="row gap-5 gap-lg-2">
-          <div class="row">
-            <div
-              class="col-12 d-flex justify-content-between align-items-center"
-            >
-              <img
-                class="img-fluid d-none d-lg-block"
-                src="/assets/manageAuctions.svg"
-              />
-              <a href="ManageAuctions.html" class="btn btn-success link-btn"
-                >Manage Auctions</a
-              >
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-12 d-flex justify-content-between align-items-center"
-            >
-              <img
-                class="img-fluid d-none d-lg-block"
-                src="/assets/manageUsers.svg"
-              />
-              <a href="ManageUsers.html" class="btn btn-success link-btn"
-                >Manage Users</a
-              >
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-12 d-flex justify-content-between align-items-center"
-            >
-              <img
-                class="img-fluid d-none d-lg-block"
-                src="/assets/manageGuidelines.svg"
-              />
-              <a href="" class="btn btn-success link-btn"
-                >View/Update Pricing</a
-              >
-            </div>
-          </div>
-        </div>
+    <main class="container-fluid">
+      <div class="d-flex justify-content-between align-items-center m-2">
+        <p class="md-title">Last Updated: January 2, 2023</p>
+        <a href="" class="btn btn-success upd-btn">Update</a>
       </div>
+      <table class="table text-center text-md-start" id="myTable">
+        <thead class="bg-success">
+          <tr>
+            <th scope="col" class="bg-success text-light">Photo</th>
+            <th scope="col" class="bg-success text-light">Produce</th>
+            <th scope="col" class="bg-success text-light">
+              Market Price per Kg
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="/assets/Ampalaya.jpeg" /></td>
+            <td class="md-title">Ampalaya</td>
+            <td class="md-title text-success">₱20</td>
+          </tr>
+          <tr>
+            <td><img src="/assets/Kalabasa.jpg" /></td>
+            <td class="md-title">Kalabasa</td>
+            <td class="md-title text-success">₱40</td>
+          </tr>
+          <tr>
+            <td><img src="/assets/Tomato.png" /></td>
+            <td class="md-title">Kamatis</td>
+            <td class="md-title text-success">₱50</td>
+          </tr>
+          <tr>
+            <td><img src="/assets/Okra.jpeg" /></td>
+            <td class="md-title">Okra</td>
+            <td class="md-title text-success">₱10</td>
+          </tr>
+          <tr>
+            <td><img src="/assets/sigarilyas.jpg" /></td>
+            <td class="md-title">Sigarilyas</td>
+            <td class="md-title text-success">₱10</td>
+          </tr>
+          <tr>
+            <td><img src="/assets/sitaw.jpg" /></td>
+            <td class="md-title">Sitaw</td>
+            <td class="md-title text-success">₱10</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
   </body>
 </html>
