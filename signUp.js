@@ -3,6 +3,7 @@ let signUpImg = document.getElementById("signUpVect");
 let signUpInp = document.getElementById("pic-sign-up");
 signUpInp.addEventListener("change", () => {
   signUpImg.src = URL.createObjectURL(signUpInp.files[0]);
+  signUpImg.classList.add("rounded-circle");
 });
 
 // changes radio label to the specific type of file they need to upload
