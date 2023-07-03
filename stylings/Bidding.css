@@ -81,8 +81,18 @@ nav {
   width: 50px;
   height: 50px;
 }
-tr td:nth-child(1) {
+tr td:nth-of-type(2) {
+  font-size: 1.5rem;
   color: green !important;
+}
+.bids-row {
+  display: flex;
+  flex-direction: column;
+  height: 60rem !important;
+  overflow: scroll;
+}
+tbody {
+  overflow: scroll;
 }
 /* Bidding Main */
 @media screen and (max-width: 576px) {

@@ -154,16 +154,17 @@
             <p class="desc">Auction Id: {ID}</p>
             <p class="desc">Farmer: <span class="fw-bold">Darren</span></p>
             <p class="desc">Volume: {volume}</p>
-            <p class="desc">Base Price: {Base Price}</p>
+            <p class="desc">Base Price: <span id="bp">20</span></p>
             <p class="desc">
-              Latest Bid Price: <span class="text-success fw-bold">{LBP}</span>
+              Latest Bid Price:
+              <span class="text-success fw-bold" id="lbp"></span>
             </p>
           </div>
         </div>
-        <div class="col">
+        <div class="col bg-success-subtle">
+          <p class="title text-center">Bids</p>
           <div class="row bids-row bg-success-subtle">
-            <p class="title text-center">Bids</p>
-            <div class="bids-table">
+            <div class="bids-table mt-2">
               <table class="table table-striped">
                 <thead>
                   <tr>
@@ -174,6 +175,7 @@
                   </tr>
                 </thead>
                 <tbody id="tbody">
+                  <!--
                   <tr>
                     <td class="text-center">
                       <img
@@ -187,14 +189,35 @@
                     <td>420</td>
                     <td>2023-1-2</td>
                   </tr>
+                  -->
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="row">Bid CTA</div>
+          <div class="row p-5">
+            <div class="input-group w-50 mb-2">
+              <span id="peso-sign" class="input-group-text bg-transparent"
+                >₱</span
+              >
+              <input
+                type="number"
+                class="form-control text-center"
+                id="inputPrice"
+                onkeyup="al()"
+              />
+            </div>
+            <button
+              class="btn btn-success w-25"
+              onclick="lezgo()"
+              id="bid-cta"
+              disabled
+            >
+              Bid
+            </button>
+          </div>
         </div>
       </div>
-      <script src="biddings.js"></script>
+      <script src="/biddings.js"></script>
     </main>
   </body>
 </html>
