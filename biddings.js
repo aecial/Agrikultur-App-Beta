@@ -46,3 +46,4 @@ function lezgo() {
   btn.disabled = true;
 }
 //Low boss Teddys
+// ulit ulitan ke par
