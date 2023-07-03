@@ -1,3 +1,4 @@
+//Hello Boss Denmark
 let tableBody = document.getElementById("tbody");
 let bp = document.getElementById("bp").innerText;
 let bpPrice = parseInt(bp);
