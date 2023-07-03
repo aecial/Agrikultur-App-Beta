@@ -45,3 +45,4 @@ function lezgo() {
   inputPrice.value = null;
   btn.disabled = true;
 }
+//Low boss Teddys
