@@ -58,6 +58,11 @@ nav {
 #brand {
   color: #6c9c82 !important;
 }
+.payment-col {
+  background-image: linear-gradient(140deg, #6c9c82, #215136);
+}
+.billing-col {
+}
 /* Navigation Bar CSS */
 @media screen and (max-width: 576px) {
   .logo-pic {
