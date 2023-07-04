@@ -209,6 +209,9 @@ footer {
   .hero-content {
     overflow-y: scroll;
   }
+  .hero-typings .desc {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 576px) {
   html {
