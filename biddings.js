@@ -23,7 +23,7 @@ function lezgo() {
   let imagecol = document.createElement("td");
   imagecol.classList.add("text-center");
   let image = document.createElement("img");
-  image.src = "/assets/Teddy.jpg";
+  image.src = "../assets/Teddy.jpg";
   image.classList.add("rounded-circle");
   image.id = "table-img";
   imagecol.appendChild(image);
