@@ -146,15 +146,15 @@
       </div>
     </nav>
     <!--Navigation Bar-->
-    <main class="container-fluid">
-      <div class="row row-cols-1 row-cols-lg-2 vh-100">
+    <main class="container-fluid vh-100">
+      <div class="row row-cols-1 row-cols-lg-2 vh-100 main-row">
         <div class="col">
           <div
             class="row image-row d-flex justify-content-center align-items-center"
           >
             <img src="../assets/Kalabasa.jpg" alt="" class="" id="bid-image" />
           </div>
-          <div class="row information-row d-flex">
+          <div class="row information-row">
             <p class="md-title">Bidding will end at : {Date}</p>
             <p class="desc">Auction Id: {ID}</p>
             <p class="desc">Farmer: <span class="fw-bold">Darren</span></p>
@@ -166,7 +166,7 @@
             </p>
           </div>
         </div>
-        <div class="col bg-success-subtle">
+        <div class="col cta-col bg-success-subtle">
           <p class="title text-center">Bids</p>
           <div class="row bids-row bg-success-subtle">
             <div class="bids-table mt-2">
@@ -199,11 +199,9 @@
               </table>
             </div>
           </div>
-          <div class="row p-5">
+          <div class="row cta-row d-flex flex-column align-items-center mt-5">
             <div class="input-group w-50 mb-2">
-              <span id="peso-sign" class="input-group-text bg-transparent"
-                >₱</span
-              >
+              <span id="peso-sign" class="input-group-text">₱</span>
               <input
                 type="number"
                 class="form-control text-center"

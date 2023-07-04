@@ -24,6 +24,7 @@ p {
 }
 .desc {
   text-indent: 1.5rem;
+  font-size: 2.4rem;
 }
 #brand {
   font-size: 4rem;
@@ -62,37 +63,53 @@ nav {
 
 /* Bidding Main */
 .image-row {
+  padding: 2rem;
   background-image: linear-gradient(140deg, #6c9c82, #215136);
-  height: 40rem;
 }
 .information-row {
-  height: 40.3rem;
-  border: 1px solid red;
+  height: 60vh;
+  font-style: italic;
 }
 .information-row p {
   margin: 0px !important;
   padding: 0px !important;
 }
 #bid-image {
-  max-width: 60rem;
-  max-height: 40rem;
+  max-width: 40rem;
+  max-height: 20rem;
 }
 #table-img {
   width: 50px;
   height: 50px;
 }
 tr td:nth-of-type(2) {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: green !important;
 }
+tr td {
+  font-size: 1.5rem;
+}
+
 .bids-row {
   display: flex;
   flex-direction: column;
-  height: 60rem !important;
+  height: 60vh !important;
   overflow: scroll;
+  border-bottom: 2px solid black;
+}
+.cta-col {
+  max-height: 84.8vh !important;
+  padding-bottom: 5rem;
 }
 tbody {
   overflow: scroll;
+}
+.input-group input {
+  width: 20rem !important;
+  font-size: 2rem;
+}
+#bid-cta {
+  font-size: 3rem;
 }
 /* Bidding Main */
 @media screen and (max-width: 576px) {
@@ -107,9 +124,16 @@ tbody {
     font-size: 2rem;
   }
   .desc {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .md-title {
     font-size: 2.5rem;
+  }
+  .input-group input {
+    width: 15rem !important;
+    font-size: 2rem;
+  }
+  #bid-cta {
+    font-size: 2rem;
   }
 }
