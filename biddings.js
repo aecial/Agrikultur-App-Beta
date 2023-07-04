@@ -33,7 +33,7 @@ function lezgo() {
   name.innerText = "Darren Ventura";
   row.appendChild(name);
   let price = document.createElement("td");
-  price.innerText = `${inputPrice.value}`;
+  price.innerText = `₱ ${inputPrice.value}`;
   row.appendChild(price);
   const d = new Date();
   let date = document.createElement("td");
@@ -41,7 +41,7 @@ function lezgo() {
   row.appendChild(date);
   tableBody.prepend(row);
   latestprice = inputPrice.value;
-  lbp.innerText = `${latestprice}`;
+  lbp.innerText = `₱ ${latestprice}`;
   inputPrice.value = null;
   btn.disabled = true;
 }
