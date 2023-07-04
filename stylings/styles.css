@@ -205,7 +205,7 @@ footer {
 
 /* media queries */
 /* XS */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   .hero-content {
     overflow-y: scroll;
   }
