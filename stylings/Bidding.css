@@ -99,7 +99,7 @@ tr td {
 }
 .cta-col {
   max-height: 84.8vh !important;
-  padding-bottom: 10rem;
+  padding-bottom: 1rem;
 }
 tbody {
   overflow: scroll;
@@ -113,6 +113,7 @@ tbody {
 }
 #bid-cta {
   font-size: 3rem;
+  width: 10rem !important;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
