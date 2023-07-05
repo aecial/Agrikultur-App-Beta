@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
-    <link rel="stylesheet" href="/stylings/Checkout.css" />
+    <link rel="stylesheet" href="../stylings/Checkout.css" />
     <!-- Boostrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -48,7 +48,7 @@
           id="brand"
           href="#"
           ><img
-            src="/assets/logo-nobg.png"
+            src="../assets/logo-nobg.png"
             class="img-fluid logo-pic rounded-circle"
           />
           <p class="title">Agrikultur'App</p></a
@@ -109,7 +109,7 @@
             <li class="nav-item me-2">
               <a
                 class="btn btn-success w-auto fs-3 d-block d-xxl-none float-end"
-                href="/pages/Login.html"
+                href="../pages/Login.html"
                 >Sign Out</a
               >
             </li>
@@ -123,7 +123,7 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <img src="/assets/Teddy.jpg" class="img-fluid rounded-circle" />
+              <img src="../assets/Teddy.jpg" class="img-fluid rounded-circle" />
             </button>
             <div
               class="dropdown-menu fs-3"
@@ -137,7 +137,7 @@
                 ><i class="fa-solid fa-bell"></i> Notifications</a
               >
               <div class="dropdown-divider"></div>
-              <a class="btn btn-success w-100 fs-3" href="/pages/Login.html"
+              <a class="btn btn-success w-100 fs-3" href="../pages/Login.html"
                 ><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a
               >
             </div>
@@ -150,40 +150,98 @@
       <div class="container-fluid">
         <div class="row vh-100 row-cols-1 row-cols-lg-2">
           <div class="col payment-col">
-            <p class="title text-light">Payment Methods</p>
-            <div class="d-flex flex-column justify-content-center mx-5">
-              <div class="form-check fs-1">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios1"
-                  value="option1"
-                  checked
-                />
-                <label class="form-check-label text-light" for="exampleRadios1">
-                  Gcash
-                </label>
+            <p class="title text-light">Payment Method</p>
+            <div class="input-group w-50 mb-lg-5">
+              <div class="input-group-prepend">
+                <div class="input-group-text h-100">
+                  <input
+                    type="radio"
+                    aria-label="Radio button for following text input"
+                    checked
+                  />
+                </div>
               </div>
-              <div class="form-check fs-1 text-light">
+              <input
+                type="text"
+                class="form-control fs-1"
+                aria-label="Text input with radio button"
+                readonly
+                value="Gcash"
+              />
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center mx-5 p-5 mb-lg-5"
+            >
+              <p class="title text-light">Name: Teddy</p>
+              <p class="title text-light">Gcash Number:</p>
+              <div class="input-group mb-3 fs-1">
                 <input
-                  class="form-check-input"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios2"
-                  value="option2"
+                  type="text"
+                  class="form-control fs-1"
+                  value="09982409945"
+                  aria-describedby="basic-addon2"
+                  readonly
+                  id="num"
                 />
-                <label class="form-check-label" for="exampleRadios2">
-                  Cash on Pickup
-                </label>
+                <div class="input-group-append">
+                  <button
+                    class="btn btn-outline-light bg-transparent fs-1"
+                    type="button"
+                    onclick="copy()"
+                  >
+                    <i class="fa-solid fa-copy text-white"></i>
+                    Copy
+                  </button>
+                </div>
               </div>
+            </div>
+            <div class="container-fluid bg-light">
+              <p class="title text-success">
+                Open Gcash app and send the total amount to the number provided
+                above and then comeback and click "Transferred"
+              </p>
             </div>
           </div>
           <div class="col billing-col">
-            <p class="title text-success">Agrikultur'App</p>
+            <p class="title">Payment Details:</p>
+            <div
+              class="container-fluid p-5 d-flex flex-column justify-content-between h-75"
+            >
+              <div>
+                <p class="title mb-5">
+                  Auction Id:
+                  <span class="fw-bold" id="auction-id">123412312</span>
+                </p>
+                <div
+                  class="d-flex flex-column flex-lg-row justify-content-evenly align-items-center"
+                >
+                  <img
+                    src="../assets/Ampalaya.jpeg"
+                    alt=""
+                    style="width: 30rem"
+                  />
+                  <p id="crop-type" class="fs-1 fw-bold mx-2">Ampalaya</p>
+                  <p class="fs-1 fw-semibold" id="volume">24kg</p>
+                </div>
+              </div>
+              <div>
+                <div class="border-top">
+                  <p class="title text-end">
+                    Total:
+                    <span class="text-success" id="total">403424234</span>
+                  </p>
+                </div>
+                <a
+                  class="btn btn-success fs-1 w-100"
+                  href="Congratulations.html"
+                  >Transferred</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <script src="../copy.js"></script>
   </body>
 </html>
