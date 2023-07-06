@@ -63,6 +63,9 @@ nav {
 }
 .billing-col {
 }
+.btn {
+  font-family: "Oswald", sans-serif !important;
+}
 /* Navigation Bar CSS */
 @media screen and (max-width: 576px) {
   .logo-pic {
