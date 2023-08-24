@@ -167,7 +167,7 @@
                 />
                 <p class="fs-5 fw-bold">Darren Ventura</p>
               </div>
-              <p>Base Bid Price: 499</p>
+              <p>Base Bid Price: <span id="bp">20</span></p>
             </div>
             <div class="col border-black">
               <p class="mt-2">Ending In</p>
@@ -175,7 +175,7 @@
                 <p class="fs-1 fw-bold mt-3">January 02, 2022</p>
               </div>
               <p class="mt-3">
-                Latest Bid Price: <span class="fw-bold">499</span>
+                Latest Bid Price: <span class="fw-bold" id="lbp">499</span>
               </p>
             </div>
           </div>
@@ -195,7 +195,7 @@
                     </tr>
                   </thead>
                   <tbody id="tbody">
-                    <tr>
+                    <!-- <tr>
                       <td class="text-center">
                         <img
                           src="/assets/Teddy.jpg"
@@ -259,7 +259,7 @@
                       <td>Teddy Pascual</td>
                       <td>420</td>
                       <td>2023-1-2</td>
-                    </tr>
+                    </tr> -->
                   </tbody>
                 </table>
               </div>
@@ -293,6 +293,7 @@
           </div>
         </div>
         <!-- Mobile Container -->
+
         <!-- Web  Container -->
         <div class="col d-none d-lg-block p-5">
           <div class="row row-cols-2">
@@ -323,14 +324,14 @@
               <div
                 class="d-flex justify-content-center align-items-center gap-5"
               >
-                <p class="desc">Base Bid Price: 499</p>
+                <p class="desc">Base Bid Price: <span id="bp2">20</span></p>
                 <p class="desc">|</p>
-                <p class="desc">Latest Bid Price: 499</p>
+                <p class="desc">Latest Bid Price: <span id="lbp2">20</span></p>
               </div>
             </div>
             <div class="col">
               <p class="title text-center">Sigarilyas</p>
-              <p class="title text-success">499</p>
+              <p class="title text-success"><span id="lbp3">20</span></p>
               <p class="md-title">Bidding will end at: January 02, 2024</p>
               <p class="md-title">Volume: 22kg</p>
               <div class="d-flex flex-column align-items-center">
@@ -346,8 +347,8 @@
                           <th scope="col">Date</th>
                         </tr>
                       </thead>
-                      <tbody id="tbody">
-                        <tr>
+                      <tbody id="tbody2">
+                        <!-- <tr>
                           <td class="text-center">
                             <img
                               src="/assets/Teddy.jpg"
@@ -411,7 +412,7 @@
                           <td>Teddy Pascual</td>
                           <td>420</td>
                           <td>2023-1-2</td>
-                        </tr>
+                        </tr> -->
                       </tbody>
                     </table>
                   </div>
@@ -420,10 +421,16 @@
                   <input
                     type="number"
                     name=""
-                    id=""
+                    id="inputPrice2"
                     class="form-control border-black text-center fs-1"
+                    onkeyup="al2()"
                   />
-                  <button type="submit" class="w-100 btn btn-success fs-1">
+                  <button
+                    type="submit"
+                    id="bid-btn2"
+                    class="w-100 btn btn-success fs-1"
+                    onclick="lezgo2()"
+                  >
                     Bid
                   </button>
                 </div>

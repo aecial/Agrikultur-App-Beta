@@ -3,7 +3,7 @@ let tableBody = document.getElementById("tbody");
 let bp = document.getElementById("bp").innerText;
 let bpPrice = parseInt(bp);
 let latestprice = bpPrice;
-let btn = document.getElementById("bid-cta");
+let btn = document.getElementById("bid-btn");
 let lbp = document.getElementById("lbp");
 
 function al() {
@@ -44,6 +44,54 @@ function lezgo() {
   lbp.innerText = `₱ ${latestprice}`;
   inputPrice.value = null;
   btn.disabled = true;
+}
+let tableBody2 = document.getElementById("tbody2");
+let bp2 = document.getElementById("bp2").innerText;
+let bpPrice2 = parseInt(bp);
+let latestprice2 = bpPrice;
+let btn2 = document.getElementById("bid-btn2");
+let lbp2 = document.getElementById("lbp2");
+let lbp3 = document.getElementById("lbp3");
+
+function al2() {
+  console.log(bpPrice);
+  let inputPrice2 = document.getElementById("inputPrice2");
+  if (inputPrice2.value > latestprice2) {
+    btn2.disabled = false;
+  } else if (latestprice < 0) {
+    btn2.disabled = false;
+  } else {
+    btn2.disabled = true;
+  }
+}
+function lezgo2() {
+  let inputPrice2 = document.getElementById("inputPrice2");
+  let row = document.createElement("tr");
+  let imagecol = document.createElement("td");
+  imagecol.classList.add("text-center");
+  let image = document.createElement("img");
+  image.src = "../assets/Teddy.jpg";
+  image.classList.add("rounded-circle");
+  image.id = "table-img";
+  imagecol.appendChild(image);
+  row.appendChild(imagecol);
+
+  let name = document.createElement("td");
+  name.innerText = "Darren Ventura";
+  row.appendChild(name);
+  let price = document.createElement("td");
+  price.innerText = `₱ ${inputPrice2.value}`;
+  row.appendChild(price);
+  const d = new Date();
+  let date = document.createElement("td");
+  date.innerText = d;
+  row.appendChild(date);
+  tableBody2.prepend(row);
+  latestprice2 = inputPrice2.value;
+  lbp2.innerText = `${latestprice2}`;
+  lbp3.innerText = `${latestprice2}`;
+  inputPrice2.value = null;
+  btn2.disabled = true;
 }
 function getAverageRGB(imgEl) {
   var blockSize = 5, // only visit every 5 pixels
