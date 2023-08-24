@@ -63,7 +63,7 @@ nav {
 
 /* Offered Produce Auction */
 .offered-produce {
-  height: 70vh;
+  height: 100vh;
   background-image: linear-gradient(140deg, #6c9c82, #215136);
 }
 .crop-type-selection button {
