@@ -67,7 +67,7 @@ nav {
 /* Hero Styling */
 .hero-section {
   border-bottom: 1px solid black;
-  height: 93vh;
+  height: calc(100vh - 116.25px);
 }
 .hero-content {
   width: 80%;
@@ -76,14 +76,18 @@ nav {
   background-size: cover;
 }
 .hero-typings {
-  width: 70%;
-  background-color: white;
+  width: 75%;
+  background-color: blue;
+}
+.embedded {
+  width: 50%;
+  height: 65%;
 }
 .green-patch {
   position: absolute;
   right: 0;
   width: 20%;
-  height: 93vh;
+  height: calc(100vh - 116.25px);
   background-image: linear-gradient(60deg, #6c9c82, #215136);
   z-index: -1;
 }
@@ -160,8 +164,8 @@ nav {
   font-size: 2rem;
 }
 .contact-info {
-  height: 40rem;
-  width: 60rem;
+  height: 25rem;
+  width: 50rem;
   background-color: white;
   border-radius: 0.5rem;
 }
@@ -239,11 +243,30 @@ footer {
     width: 8rem;
     height: 8rem;
   }
+  .embedded {
+    width: 80%;
+  }
+  .contact-info {
+    width: 30rem;
+  }
+  .accordion-cont {
+    padding: 2rem;
+  }
 }
 /* SM */
 @media screen and (max-width: 767px) {
   html {
     font-size: 6px;
+  }
+  .hero-section {
+    border-bottom: 1px solid black;
+    height: calc(100vh - 86.63px);
+  }
+  .green-patch {
+    height: calc(100vh - 86.63px);
+  }
+  .hero-typings {
+    width: 100%;
   }
 }
 /* MD */

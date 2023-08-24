@@ -62,21 +62,12 @@ nav {
 /* Navigation Bar CSS */
 
 /* Bidding Main */
-.image-row {
-  padding: 2rem;
-  background-image: linear-gradient(140deg, #6c9c82, #215136);
-}
-.information-row {
-  height: 60vh;
-  font-style: italic;
-}
-.information-row p {
-  margin: 0px !important;
-  padding: 0px !important;
+.main-cont {
+  height: calc(100vh - 51.25px);
 }
 #bid-image {
-  max-width: 40rem;
-  max-height: 20rem;
+  width: 30rem;
+  height: 17rem;
 }
 #table-img {
   width: 50px;
@@ -89,31 +80,31 @@ tr td:nth-of-type(2) {
 tr td {
   font-size: 1.5rem;
 }
-
+.image-row {
+  background-color: #6c9c82;
+}
+.web-img-cont {
+  height: 65vh;
+}
 .bids-row {
   display: flex;
   flex-direction: column;
-  height: 60vh !important;
+  height: 33rem !important;
   overflow: scroll;
-  border-bottom: 2px solid black;
-}
-.cta-col {
-  max-height: 84.8vh !important;
-  padding-bottom: 1rem;
 }
 tbody {
   overflow: scroll;
 }
-.input-group {
-  width: 20rem !important;
-  height: 5rem !important;
+#inputPrice,
+#bid-btn {
+  width: 40%;
+  height: 4rem;
 }
-.input-group input {
+#inputPrice {
+  font-size: 1.2rem;
+}
+#bid-btn {
   font-size: 2rem;
-}
-#bid-cta {
-  font-size: 3rem;
-  width: 10rem !important;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -150,5 +141,9 @@ input[type="number"] {
   }
   #bid-cta {
     font-size: 2rem;
+  }
+  #bid-image {
+    width: 30rem;
+    height: 15rem;
   }
 }
