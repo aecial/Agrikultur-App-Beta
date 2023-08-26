@@ -76,8 +76,11 @@ p {
   width: 15rem;
   height: 15rem;
 }
-.dropdown-menu {
-  width: 15rem !important;
+#dropdown-menu {
+  position: absolute !important;
+  left: -10rem !important;
+  top: 15.5rem !important;
+  width: 25rem !important;
 }
 #nav-link,
 #brand {

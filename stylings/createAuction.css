@@ -56,14 +56,17 @@ nav {
   width: 15rem;
   height: 15rem;
 }
-.dropdown-menu {
-  width: 15rem !important;
+#dropdown-menu {
+  position: absolute !important;
+  left: -10rem !important;
+  top: 15.5rem !important;
+  width: 25rem !important;
 }
 
 .form-card {
   background-image: linear-gradient(140deg, #6c9c82, #215136);
   width: 100%;
-  height: 82.5vh !important;
+  height: calc(100vh - 220.25px) !important;
 }
 #createForm {
   margin-top: 10%;
@@ -121,5 +124,10 @@ input[type="number"] {
   }
   #createForm {
     margin-top: 35%;
+  }
+  .form-card {
+    background-image: linear-gradient(140deg, #6c9c82, #215136);
+    width: 100%;
+    height: calc(100vh - 121.25px) !important;
   }
 }
