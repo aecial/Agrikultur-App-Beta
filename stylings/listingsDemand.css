@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+#brand {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+#nav-link {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+#Login-btn {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+nav {
+  box-shadow: 1px 2px 5px #5d5b5b;
+}
+
+/* Typography */
+body {
+  font-family: "Merriweather", serif;
+}
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+.md-title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+p {
+  font-size: 3rem;
+}
+.desc {
+  text-indent: 1rem;
+  text-align: justify;
+}
+#brand {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+#nav-link {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+#Login-btn {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+#start-btn {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+/* Typography */
+
+/* Navigation Bar CSS */
+.nav-pic {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+.logo-pic {
+  width: 15rem;
+  height: 15rem;
+}
+#dropdown-menu {
+  position: absolute !important;
+  left: -10rem !important;
+  top: 15.5rem !important;
+  width: 25rem !important;
+}
+#nav-link,
+#brand {
+  color: #6c9c82 !important;
+}
+/* Navigation Bar CSS */
+
+/* Offered Produce Auction */
+.offered-produce {
+  height: auto;
+  background-image: linear-gradient(140deg, #6c9c82, #215136);
+}
+.new-text-btn {
+  text-align: center;
+}
+.new-text-btn {
+  color: white;
+}
+.crop-type-selection button {
+  color: black;
+}
+button.active {
+  border-radius: 20px !important;
+  background-color: #198754 !important;
+  color: white !important;
+}
+.crop-type-selection {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border-bottom: 1px solid green;
+}
+.crop-type-selection::-webkit-scrollbar {
+  width: 0 !important;
+}
+.offered-produce .nav-link:hover {
+  color: white !important;
+}
+.card-img-top {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+.desktop-view {
+  height: auto;
+}
+.card {
+  width: 25rem !important;
+  height: 50rem !important;
+}
+.highlight-text {
+  color: #198754;
+  font-weight: bold;
+}
+/* Offered Produce Auction */
+
+@media screen and (max-width: 576px) {
+  .logo-pic {
+    width: 50px;
+    height: 50px;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  #nav-link {
+    font-size: 2rem;
+  }
+  .desc {
+    font-size: 1.5rem;
+  }
+  .md-title {
+    font-size: 2.5rem;
+  }
+}
