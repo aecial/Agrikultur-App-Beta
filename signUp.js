@@ -13,8 +13,7 @@ function radioChange(val) {
   if (val === "farmer") {
     formText.innerText = `Upload RSBSA: `;
   } else {
-    formText.innerText =
-      "Upload Valid ID: (National ID Qr Code or Driver's License) ";
+    formText.innerText = "Upload Government Issued ID:  ";
   }
 }
 // relocate the user to the SignComplete after signing up
