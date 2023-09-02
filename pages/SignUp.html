@@ -25,11 +25,7 @@
       <div class="row row-cols-2">
         <!--Image Container-->
         <div class="col mt-auto d-none d-lg-block my-auto">
-          <img
-            class="img-fluid pt-3"
-            src="../assets/signUp2.svg"
-            id="signUpVect"
-          />
+          <img class="img-fluid" src="../assets/signUp2.svg" id="signUpVect" />
         </div>
         <!--Image Container-->
 
@@ -49,6 +45,7 @@
                     id="fname"
                     placeholder="Put First Name Here"
                     required
+                    autocomplete="off"
                   />
                   <label for="fname">First Name</label>
                 </div>
@@ -61,6 +58,7 @@
                     id="lname"
                     placeholder="Put Last Name Here"
                     required
+                    autocomplete="off"
                   />
                   <label for="fname">Last Name</label>
                 </div>
@@ -75,6 +73,7 @@
                     id="email"
                     required
                     placeholder="Put Email Here"
+                    autocomplete="off"
                   />
                   <label for="email">Email</label>
                 </div>
@@ -122,6 +121,7 @@
                     required
                     placeholder="Put Phone Number Here"
                     onchange="phoneCheck()"
+                    autocomplete="off"
                   />
                   <div class="invalid-feedback">Invalid Phone Number</div>
                   <label for="phone-number">Phone Number</label>
@@ -137,6 +137,7 @@
                     id="address"
                     placeholder="Put Address Here"
                     required
+                    autocomplete="off"
                   />
                   <label for="address">Address</label>
                 </div>
