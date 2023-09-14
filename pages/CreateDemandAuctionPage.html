@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
-    <link rel="stylesheet" href="../stylings/Profile.css" />
+    <title>Create New Demand Auction</title>
     <!-- Boostrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -18,6 +17,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../stylings/createAuction.css" />
     <script
       src="https://kit.fontawesome.com/fae056ab45.js"
       crossorigin="anonymous"
@@ -67,8 +67,9 @@
           >
             <li class="nav-item me-2">
               <a
-                class="nav-link text-success"
+                class="nav-link active text-success"
                 id="nav-link"
+                aria-current="page"
                 href="AuctionPage.html"
                 ><i class="fa-solid fa-gavel"></i> Auction Page</a
               >
@@ -95,7 +96,7 @@
                 <strong
                   ><a
                     href="Profile.html"
-                    class="nav-link active text-success text-decoration-underline"
+                    class="nav-link text-success text-decoration-underline"
                     >Teddy Pascual</a
                   ></strong
                 >
@@ -120,7 +121,7 @@
               aria-expanded="false"
             >
               <img
-                src="../assets/Teddy.jpg"
+                src="../assets/avatar1.svg"
                 class="rounded-circle object-fit-fill"
                 width="100%"
                 height="100%"
@@ -134,7 +135,7 @@
               <a class="dropdown-item text-success" href="Profile.html"
                 ><i class="fa-solid fa-user"></i> Profile</a
               >
-              <a class="dropdown-item text-success" href="Notifications.html"
+              <a class="dropdown-item text-success" href="#"
                 ><i class="fa-solid fa-bell"></i> Notifications</a
               >
               <div class="dropdown-divider"></div>
@@ -147,143 +148,127 @@
       </div>
     </nav>
     <!--Navigation Bar-->
-    <main class="container-fluid">
-      <div class="row row-cols-1 row-cols-lg-2">
-        <!--Image Container-->
-        <div
-          class="col d-flex flex-column align-items-center justify-content-center img-section"
-        >
-          <img
-            src="../assets/avatar1.svg"
-            class="rounded-circle object-fit-fill"
-            style="width: 35rem; height: 35rem"
-            alt=""
-            id="profile-pic"
-          />
-          <label for="change-prof" class="md-title mt-5"
-            >Change Profile Picture</label
-          >
-          <form action="" class="w-755">
-            <div class="input-group">
-              <input
-                type="file"
-                class="form-control bg-transparent"
-                id="change-prof"
-                accept="image/png, image/jpeg"
-              />
-              <button
-                type="submit"
-                class="btn btn-success"
-                id="save-img-btn"
-                disabled
-                onclick="saveProfPic()"
-              >
-                Save
-              </button>
+
+    <!--Create Form Section-->
+    <section class="container-fluid create-form-section">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="card mt-5 form-card">
+            <div class="card-body">
+              <h1 class="title text-center text-light mt-5">
+                Create Demand Auction
+              </h1>
+              <form class="d-flex flex-column" id="createForm" action="">
+                <!--Select Input-->
+                <select
+                  id="crop_category"
+                  class="form-select mb-2 fs-1 bg-transparent text-light"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option
+                    value="null"
+                    class="bg-body-tertiary"
+                    selected
+                    disabled
+                  >
+                    Choose a Crop Type
+                  </option>
+                  <option value="Ampalaya" class="bg-success text-light">
+                    Ampalaya
+                  </option>
+                  <option value="Kalabasa" class="bg-success text-light">
+                    Kalabasa
+                  </option>
+                  <option value="Kamatis" class="bg-success text-light">
+                    Kamatis
+                  </option>
+                  <option value="Okra" class="bg-success text-light">
+                    Okra
+                  </option>
+                  <option value="Sigarilyas" class="bg-success text-light">
+                    Sigarilyas
+                  </option>
+                  <option value="Sitaw" class="bg-success text-light">
+                    Sitaw
+                  </option>
+                </select>
+                <!--Select Input-->
+
+                <!--Price Input-->
+                <div class="input-group mb-3">
+                  <span
+                    id="peso-sign"
+                    class="input-group-text fs-1 bg-success text-light"
+                    >₱</span
+                  >
+                  <input
+                    onkeyup="btnDis()"
+                    id="crop_price"
+                    type="number"
+                    class="form-control fs-1 bg-transparent text-light"
+                    placeholder="Crop Price"
+                    aria-label="Price"
+                    required
+                  />
+                </div>
+                <!--Price Input-->
+
+                <!--Volume Input-->
+                <div class="input-group mb-3 bg-transparent">
+                  <span class="input-group-text fs-1 bg-success text-light"
+                    >Kg:
+                  </span>
+                  <input
+                    onkeyup="btnDis()"
+                    id="crop_volume"
+                    type="number"
+                    class="form-control fs-1 bg-transparent text-light"
+                    placeholder="Crop Volume"
+                    aria-label="Volume"
+                    required
+                  />
+                </div>
+                <!--Volume Input-->
+
+                <!--Picture Input-->
+                <label for="crop_picture" class="text-light md-title"
+                  >Enter Pick-up Date</label
+                >
+                <div class="input-group mb-3 bg-transparent">
+                  <input
+                    type="date"
+                    name=""
+                    id=""
+                    class="form-control fs-1 bg-transparent text-light"
+                  />
+                </div>
+                <!--Picture Input-->
+
+                <div class="d-flex justify-content-between mt-3">
+                  <!--Utility Buttons-->
+                  <a
+                    id="back-btn"
+                    class="btn text-light bg-transparent align-self-end w-50 fs-1"
+                    href="javascript:history.back()"
+                  >
+                    Back
+                  </a>
+                  <button
+                    id="form-btn"
+                    onclick="confirmSubmit()"
+                    class="btn btn-success align-self-end w-50 fs-1"
+                  >
+                    Submit
+                  </button>
+                  <!--Utility Buttons-->
+                </div>
+              </form>
             </div>
-            <!--Image Container-->
-          </form>
+          </div>
         </div>
-        <!--Information Container-->
-        <div class="col d-flex flex-column align-items-center">
-          <form action="" class="fs-5 information-section p-4" id="info-form">
-            <p class="title text-light">Personal Information</p>
-            <!--Name Information-->
-            <div class="d-flex mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="name_inp"
-                placeholder="Teddy Pascual"
-                onchange="boom()"
-                disabled
-              />
-              <button
-                class="edit-btn text-success"
-                id="edit-info-btn"
-                type="button"
-                onclick='ror("name_inp")'
-              >
-                <i class="fa-solid fa-pen-to-square"></i>
-              </button>
-            </div>
-            <!--Name Information-->
-
-            <!--Email Information-->
-            <div class="d-flex mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="email_inp"
-                placeholder="kledted23@gmail.com"
-                onchange="boom()"
-                disabled
-              />
-              <button
-                class="edit-btn text-success"
-                id="edit-info-btn"
-                type="button"
-                onclick='ror("email_inp")'
-              >
-                <i class="fa-solid fa-pen-to-square"></i>
-              </button>
-            </div>
-            <!--Email Information-->
-
-            <!--Address Information-->
-            <div class="d-flex mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="address_inp"
-                placeholder="Capas,Tarlac"
-                onchange="boom()"
-                disabled
-              />
-              <button
-                class="edit-btn text-success"
-                id="edit-info-btn"
-                type="button"
-                onclick='ror("address_inp")'
-              >
-                <i class="fa-solid fa-pen-to-square"></i>
-              </button>
-            </div>
-            <!--Address Information-->
-
-            <!--Mobile Number Information-->
-            <div class="d-flex mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="mobileNum_inp"
-                placeholder="09982409945"
-                onchange="boom()"
-                disabled
-              />
-              <button
-                class="edit-btn text-success"
-                id="edit-info-btn"
-                type="button"
-                onclick='ror("mobileNum_inp")'
-              >
-                <i class="fa-solid fa-pen-to-square"></i>
-              </button>
-            </div>
-            <!--Mobile Number Information-->
-            <button
-              type="submit"
-              class="btn btn-success fs-1"
-              id="save-btn"
-              disabled
-            >
-              Save
-            </button>
-          </form>
-        </div>
-        <!--Information Container-->
       </div>
-    </main>
-    <script src="../index.js"></script>
+    </section>
+    <!--Create Form Section-->
   </body>
 </html>

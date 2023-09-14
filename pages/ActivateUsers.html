@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Management</title>
+    <title>User Activation</title>
     <link rel="stylesheet" href="../stylings/ManageUsers.css" />
     <!-- Boostrap CSS -->
     <link
@@ -131,13 +131,13 @@
       <!--Header-->
       <div class="d-flex justify-content-between align-items-center">
         <div class="d-flex gap-3">
-          <a
-            href="ManageUsers.html"
-            class="fs-1 fw-bold nav-link active text-decoration-underline text-success"
-            >Users</a
-          >
+          <a href="ManageUsers.html" class="fs-1 nav-link">Users</a>
           <p>|</p>
-          <a class="fs-1 nav-link" href="ActivateUsers.html">Activate Users</a>
+          <a
+            class="fs-1 fw-bold nav-link active text-decoration-underline text-success"
+            href="ActivateUsers.html"
+            >Activate Users</a
+          >
         </div>
         <form class="d-flex gap-2">
           <input
@@ -168,29 +168,161 @@
             <td>09982409945</td>
             <td>kledted23@gmail.com</td>
             <td>
-              <button class="btn btn-outline-danger">Ban User</button>
+              <button type="button" class="btn btn-outline-danger">
+                Reject User
+              </button>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#tedModal"
+              >
+                Activate User
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="tedModal"
+                tabindex="-1"
+                aria-labelledby="tedModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-2" id="tedModalLabel">
+                        Account Details
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="sm-title">
+                        Name: <span class="text-success">Teddy Pascual</span>
+                      </p>
+                      <p class="sm-title">
+                        Contact Number:
+                        <span class="text-success">09982409945</span>
+                      </p>
+                      <p class="sm-title">
+                        Email:
+                        <span class="text-success">kledted23@gmail.com</span>
+                      </p>
+                      <a
+                        target="_blank"
+                        href="../assets/Ampalaya.jpeg"
+                        class="btn btn-success fs-3"
+                      >
+                        View Credentials
+                      </a>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-success"
+                        data-bs-dismiss="modal"
+                      >
+                        Activate User
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </td>
           </tr>
           <tr>
-            <td><img src="../assets/avatar1.svg" /></td>
-            <td class="fw-bold">Denmark</td>
-            <td>123123</td>
-            <td>becu@gmail.com</td>
-            <td><button class="btn btn-outline-danger">Ban User</button></td>
-          </tr>
-          <tr>
-            <td><img src="../assets/avatar1.svg" /></td>
-            <td class="fw-bold">Darren</td>
-            <td>321321</td>
-            <td>bhozsx@gmail.com</td>
-            <td><button class="btn btn-outline-danger">Ban User</button></td>
-          </tr>
-          <tr>
-            <td><img src="../assets/avatar1.svg" /></td>
-            <td class="fw-bold">Emmanuel</td>
-            <td>321321</td>
-            <td>amen@gmail.com</td>
-            <td><button class="btn btn-outline-danger">Ban User</button></td>
+            <td><img src="../assets/Teddy.jpg" class="rounded-circle" /></td>
+            <td class="fw-bold">Darren Ventura</td>
+            <td>123</td>
+            <td>dventura@gmail.com</td>
+            <td>
+              <button type="button" class="btn btn-outline-danger">
+                Reject User
+              </button>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#darrenModal"
+              >
+                Activate User
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="darrenModal"
+                tabindex="-1"
+                aria-labelledby="darrenModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-2" id="darrenModalLabel">
+                        Account Details
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="sm-title">
+                        Name: <span class="text-success">Darren Ventura</span>
+                      </p>
+                      <p class="sm-title">
+                        Contact Number:
+                        <span class="text-success">123</span>
+                      </p>
+                      <p class="sm-title">
+                        Email:
+                        <span class="text-success">dventura@gmail.com</span>
+                      </p>
+                      <a
+                        target="_blank"
+                        href="../assets/Kalabasa.jpg"
+                        class="btn btn-success fs-3"
+                      >
+                        View Credentials
+                      </a>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-success"
+                        data-bs-dismiss="modal"
+                      >
+                        Activate User
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>

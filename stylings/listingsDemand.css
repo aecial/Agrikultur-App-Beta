@@ -131,7 +131,7 @@ button.active {
   object-fit: cover;
 }
 .desktop-view {
-  height: 100%;
+  height: auto;
 }
 .card {
   width: 25rem !important;
@@ -161,6 +161,6 @@ button.active {
     font-size: 2.5rem;
   }
   .card-body > a {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
   }
 }

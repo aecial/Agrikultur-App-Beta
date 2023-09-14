@@ -1,10 +1,10 @@
-// Change the image of the sign up to the the uploaded pic
-let signUpImg = document.getElementById("signUpVect");
-let signUpInp = document.getElementById("pic-sign-up");
-signUpInp.addEventListener("change", () => {
-  signUpImg.src = URL.createObjectURL(signUpInp.files[0]);
-  signUpImg.classList.add("rounded-circle");
-});
+// // Change the image of the sign up to the the uploaded pic
+// let signUpImg = document.getElementById("signUpVect");
+// let signUpInp = document.getElementById("pic-sign-up");
+// signUpInp.addEventListener("change", () => {
+//   signUpImg.classList.add("rounded-circle", "object-fit-contain");
+//   signUpImg.src = URL.createObjectURL(signUpInp.files[0]);
+// });
 
 // changes radio label to the specific type of file they need to upload
 function radioChange(val) {
@@ -13,7 +13,7 @@ function radioChange(val) {
   if (val === "farmer") {
     formText.innerText = `Upload RSBSA: `;
   } else {
-    formText.innerText = "Upload Valid ID: ";
+    formText.innerText = "Upload Government Issued ID:  ";
   }
 }
 // relocate the user to the SignComplete after signing up
