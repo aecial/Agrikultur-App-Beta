@@ -104,6 +104,9 @@ button.active {
   width: 25rem !important;
   height: auto !important;
 }
+.col {
+  height: fit-content !important;
+}
 .desktop-view a {
   font-size: 2rem;
 }
