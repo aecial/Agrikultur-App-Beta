@@ -19,6 +19,11 @@ body {
   font-weight: bold;
   font-family: "Oswald", sans-serif;
 }
+.sm-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
 p {
   font-size: 3rem;
 }
@@ -130,6 +135,9 @@ input[type="search"]::-webkit-search-results-decoration {
   }
   .md-title {
     font-size: 2.5rem;
+  }
+  .sm-title {
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
