@@ -2,7 +2,7 @@ let displayHours = document.getElementById("displayHours");
 let displayMinutes = document.getElementById("displayMinutes");
 let displaySeconds = document.getElementById("displaySeconds");
 
-let Hours = 10;
+let Hours = 12;
 let Minutes = 0;
 let Seconds = 0;
 function update() {
