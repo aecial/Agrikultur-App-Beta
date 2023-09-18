@@ -337,7 +337,14 @@
             <div class="col border border-2 border-tertiary-subtle pb-2">
               <p class="title text-center">Sigarilyas</p>
               <p class="title text-success"><span id="lbp3">20</span></p>
-              <p class="md-title">Bidding will end at: January 02, 2024</p>
+              <p class="md-title">
+                Remaining Bidding Time:
+                <span id="time-remaining">
+                  <span id="displayHours">00</span>:<span id="displayMinutes"
+                    >00</span
+                  >:<span id="displaySeconds">00</span>
+                </span>
+              </p>
               <p class="md-title">Volume: 22kg</p>
               <div class="d-flex flex-column align-items-center">
                 <p class="title">Top Bidders</p>
@@ -445,6 +452,7 @@
         </div>
       </div>
       <script src="../biddings.js"></script>
+      <script src="../timer.js"></script>
     </main>
   </body>
 </html>
