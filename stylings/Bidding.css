@@ -80,6 +80,12 @@ tr td:nth-of-type(2) {
   font-size: 2rem;
   color: green !important;
 }
+/* EDIT TABLE STRIPED
+ .table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: red;
+} 
+*/
 tr td {
   font-size: 1.5rem;
 }
