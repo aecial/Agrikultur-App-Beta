@@ -62,9 +62,11 @@ nav {
   color: #6c9c82 !important;
 }
 .payment-col {
+  height: calc(100vh - 166.25px);
   background-image: linear-gradient(140deg, #6c9c82, #215136);
 }
 .billing-col {
+  height: calc(100vh - 166.25px);
 }
 .btn {
   font-family: "Oswald", sans-serif !important;
