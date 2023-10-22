@@ -130,7 +130,7 @@
     <main class="container-fluid overflow-x-scroll">
       <!--Header-->
       <div class="d-flex justify-content-between align-items-center">
-        <div class="d-flex gap-3">
+        <div class="d-flex align-items-center gap-3">
           <a href="ManageUsers.html" class="fs-1 nav-link">Users</a>
           <p>|</p>
           <a
@@ -158,7 +158,9 @@
             <th scope="col" class="bg-success text-light">Name</th>
             <th scope="col" class="bg-success text-light">Contact Number</th>
             <th scope="col" class="bg-success text-light">Email</th>
-            <th scope="col" class="bg-success text-light">Action</th>
+            <th scope="col" class="bg-success text-light text-center">
+              Action
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -168,18 +170,20 @@
             <td>09982409945</td>
             <td>kledted23@gmail.com</td>
             <td>
-              <button type="button" class="btn btn-outline-danger">
-                Reject User
-              </button>
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-success"
-                data-bs-toggle="modal"
-                data-bs-target="#tedModal"
-              >
-                Activate User
-              </button>
+              <div class="d-flex flex-column gap-2">
+                <button type="button" class="btn btn-outline-danger">
+                  Reject User
+                </button>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#tedModal"
+                >
+                  Activate User
+                </button>
+              </div>
 
               <!-- Modal -->
               <div
@@ -249,19 +253,20 @@
             <td>123</td>
             <td>dventura@gmail.com</td>
             <td>
-              <button type="button" class="btn btn-outline-danger">
-                Reject User
-              </button>
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-success"
-                data-bs-toggle="modal"
-                data-bs-target="#darrenModal"
-              >
-                Activate User
-              </button>
-
+              <div class="d-flex flex-column gap-2">
+                <button type="button" class="btn btn-outline-danger">
+                  Reject User
+                </button>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#darrenModal"
+                >
+                  Activate User
+                </button>
+              </div>
               <!-- Modal -->
               <div
                 class="modal fade"
