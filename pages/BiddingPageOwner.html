@@ -437,12 +437,123 @@
                   </div>
                 </div>
                 <div class="w-100 px-5 d-flex justify-content-center gap-5 p-5">
-                  <button class="btn btn-success">
-                    <p class="md-title text-light p-2">Update Base Bid Price</p>
+                  <!--Bidding Owner Controls-->
+                  <button
+                    class="btn btn-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#updateModal"
+                  >
+                    <p class="md-title text-light p-2">
+                      <i class="fa-solid fa-pen-to-square"></i> Update Base Bid
+                      Price
+                    </p>
                   </button>
-                  <button class="btn btn-success p-3">
-                    <p class="md-title text-light">Close Bidding</p>
+                  <div
+                    class="modal fade"
+                    id="updateModal"
+                    tabindex="-1"
+                    aria-labelledby="updateModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-2" id="exampleModalLabel">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Update Base Bid Price
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <form action="index.php" id="updForm">
+                            <input
+                              type="email"
+                              class="form-control mb-3 h-full fs-3"
+                              id="email-inp"
+                              value="20"
+                              autocomplete="off"
+                            />
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary fs-3"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-success fs-3"
+                            id="updateBbpBtn"
+                          >
+                            Save changes
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-success p-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#closeBiddingModal"
+                  >
+                    <p class="md-title text-light">
+                      <i class="fa-solid fa-square-xmark"></i> Close Bidding
+                    </p>
                   </button>
+                  <div
+                    class="modal fade"
+                    id="closeBiddingModal"
+                    tabindex="-1"
+                    aria-labelledby="closeBiddingModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-2" id="exampleModalLabel">
+                            <i class="fa-solid fa-square-xmark"></i>
+                            Close Bidding
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="title">
+                            Are you sure you want to manually close the bidding?
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary fs-3"
+                            data-bs-dismiss="modal"
+                          >
+                            Exit
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-success fs-3"
+                            data-bs-dismiss="modal"
+                          >
+                            Close the Bidding
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Bidding Owner Controls-->
                 </div>
               </div>
             </div>
@@ -451,6 +562,7 @@
       </div>
       <script src="../biddings.js"></script>
       <script src="../timer.js"></script>
+      <script src="../closeBidding.js"></script>
     </main>
   </body>
 </html>
